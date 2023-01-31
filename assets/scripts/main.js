@@ -41,15 +41,19 @@ var CreatorsJavaPack = CreatorsPackage('ctrebirth')
 importPackage(CreatorsJavaPack)
 importPackage(CreatorsJavaPack.draw)
 importPackage(CreatorsJavaPack.type)
-importPackage(CreatorsJavaPack.world.block)
+importPackage(CreatorsJavaPack.content)
 
 
 CreatorsModJS.RunName.add("ctrebirth")
 CreatorsModJS.DawnRun.add(run(() => {
- //require('xingqiu');
+ require('环保生产厂');
+ require('zuantou');
+
 }));
-
-
+Vars.renderer.minZoom = 0.5;
+Vars.renderer.maxZoom = 32;
+//蓝图大小
+Vars.maxSchematicSize = 128;
 
 
 
