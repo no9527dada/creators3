@@ -1,8 +1,13 @@
 {
-  "name": "creatorsdownload",
-  "displayName":"creatorsDownload",
-  "author": "NO:9527",
-  "description": "This is an online update module that updates the God of Creation mod\n这是一个更新创世神mod的在线更新模组",
-  "minGameVersion":138,
-  "version": "1.0"
+  "name": "gamesmod",
+  "main": "CGame.GameMod",
+  "displayName": "Game+",
+  "author": "[pink]编[cyan]号[red]95[violet]27",
+  //  "repo": "no9527dada/CT-origin",
+  "description": "
+ 暂无描述
+",
+  "version": "0.1",
+  "minGameVersion": 143
 }
+//hideBrowser = true //不加入模组浏览器
