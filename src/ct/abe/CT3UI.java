@@ -11,24 +11,22 @@ import mindustry.ui.dialogs.BaseDialog;
 import static mindustry.Vars.ui;
 
 public class CT3UI {
-    public static BaseDialog 开屏;
+    public static BaseDialog ct3info;
 
-    public static void 开屏显示() {
+    public static void show() {
 
         // String framer = Core.bundle.format("framer");
         Mods.LoadedMod mod = Vars.mods.getMod("ct");
         String version = mod.meta.version;
         String MODname = Core.bundle.format("planet.ct3.ModName");
 
-        开屏 = new BaseDialog("[yellow]Creators[#7bebf2] " + version + "[] Adapt 145+" + "\n策划:9527，贴图:皴皲，处理器逻辑指导:咕咕点心\nQQ群:909130592") {{
+        ct3info = new BaseDialog("[yellow]Creators[#7bebf2] " + version + "[] Adapt 145+" + "\n策划:9527，贴图:皴皲，处理器逻辑指导:咕咕点心\nQQ群:909130592") {{
             addCloseListener();//按esc关闭
             buttons.defaults().size(210, 64);
             buttons.button("@close", (this::hide)).size(100, 64);//关闭按钮
-       buttons.button(Core.bundle.format("difficulty.game"), (() -> {//游戏难度设置
-               // Vars.ui.settings.show();//设置
-                //dialog.hide();
-                new SettingsDialog().onDifficutyChange(e -> { }).show();
-
+            buttons.button(Core.bundle.get("difficulty.game","难度设置"), (() -> {//游戏难度设置
+                new SettingsDialog().onDifficutyChange(e -> {
+                }).show();
             })).size(150, 64);
             cont.pane((table -> {
                 table.add(MODname).left().growX().wrap().width(620).maxWidth(620).pad(4).labelAlign(Align.left);
@@ -54,6 +52,6 @@ public class CT3UI {
             })).grow().center().maxWidth(770).row();
 
         }};
-        开屏.show();
+        ct3info.show();
     }
 }

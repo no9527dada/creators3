@@ -1,7 +1,7 @@
 package ct.chapter1;
 
 import ct.ahapter.Item0;
-import ct.ahapter.核心方块;
+import ct.ahapter.CoreBlocks;
 
 public class chapter1 {
     public static void load() {
@@ -14,7 +14,7 @@ public class chapter1 {
         Blocks1.load();
         Wall1.load();
 
-        核心方块.load();
+        CoreBlocks.load();
         WuLiu1.load();
         Drill1.load();
 

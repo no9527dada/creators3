@@ -10,7 +10,8 @@ import static ct.chapter1.Item1.*;
 import static ct.chapter1.Unit1.*;
 import static mindustry.type.ItemStack.with;
 
-public class 核心方块 {
+//核心方块
+public class CoreBlocks {
     public static Block core0,core1,core2;
     public static void load() {
         core0 = new CTCoreBlock("core0") {{

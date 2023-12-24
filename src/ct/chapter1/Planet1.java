@@ -18,7 +18,7 @@ import mindustry.world.meta.Env;
 import static ct.CTRebirth.setPlanet;
 import static ct.ahapter.Item0.mod资源;
 import static ct.ahapter.Item0.原版资源;
-import static ct.ahapter.核心方块.*;
+import static ct.ahapter.CoreBlocks.*;
 import static ct.chapter1.Item1.陶;
 import static mindustry.content.Blocks.coreShard;
 import static mindustry.type.ItemStack.with;
