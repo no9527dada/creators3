@@ -1,6 +1,7 @@
 package ct.chapter4;
 
 import arc.graphics.Color;
+import ct.abe.rebirth.blocks.power.CreatorsPowerField;
 import ct.type.CreatorsMultiCrafter;
 import ct.type.CreatorsRecipe;
 import mindustry.content.*;
@@ -22,6 +23,7 @@ import mindustry.world.blocks.power.ConsumeGenerator;
 import mindustry.world.blocks.power.ThermalGenerator;
 import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.blocks.production.Separator;
+import mindustry.world.blocks.storage.CoreBlock;
 import mindustry.world.blocks.units.UnitCargoLoader;
 import mindustry.world.blocks.units.UnitCargoUnloadPoint;
 import mindustry.world.consumers.ConsumeItemFlammable;
@@ -49,21 +51,20 @@ public class CTBlocks {
     public static float p3t = 6 / 60f;
 
 
-
     public static Block
             //地板：
             冥矿, 魂矿, 冤藤矿, 魔力石, 赤焰石矿, 戾气赤焰石墙矿, 气丝晶体墙矿, 灵石矿, 怨石矿, 烟冰矿, 沉石矿, 微晶石矿, 硅晶矿,
             灵液地板, 黑油地板, 黑油喷口, 叹酸地板, 叮浆地板,
     //墙壁
-             墙壁,
+    墙壁,
     //工厂：
-            油泵, 黑油精炼台, 夜灵核心融合器, 珊绒透筛器, 珊绒重组器, 暗物质羽窃器,
+    油泵, 黑油精炼台, 夜灵核心融合器, 珊绒透筛器, 珊绒重组器, 暗物质羽窃器,
 
     //电力
-            十字能量节点, 小小能量节点, 能量节点, 能量收集器, 能量发生器,
+    十字能量节点, 小小能量节点, 能量节点, 能量收集器, 能量发生器,
             能源储蓄块制造器, 充能器, 能源释放器,
     //物流
-            传送带2, Armored传送带2, 传送带, Armored传送带, CTjunction, CTsorter,
+    传送带2, Armored传送带2, 传送带, Armored传送带, CTjunction, CTsorter,
             分类器, 反向分类器, 溢流门, 反向溢流门, 传送桥, 辉阳传送带,
             辉阳路由器,
             单位装载器1, 单位装载器2, 单位装载器3, 单位卸载器;
@@ -71,7 +72,22 @@ public class CTBlocks {
 
     public static Block 锁定, 方块;
 
+
+    public static Block
+            coreT1, coreT2, coreT3;
+
     public static void load() {
+        coreT1 = new CoreBlock("core-shard") {{
+            requirements(Category.effect, BuildVisibility.editorOnly, with(魂石, 300, 冥石, 500));
+            alwaysUnlocked = true;//默认解锁
+            incinerateNonBuildable = true;//焚烧不可建造的资源
+            isFirstTier = true;
+            unitType = UnitTypes.alpha;
+            health = 1100;
+            itemCapacity = 6000;
+            size = 3;
+            unitCapModifier = 0;
+        }};
 
 
         魂矿 = new OreBlock("soul_ore", 魂石) {{//铜矿
@@ -145,7 +161,6 @@ public class CTBlocks {
         魔力石 = new OreBlock("魔力石", 魔能晶) {{//单极磁石矿
 
         }};
-
 
 
         黑油地板 = new Floor("HeiYouFloor") {{

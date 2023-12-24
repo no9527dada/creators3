@@ -43,14 +43,15 @@ import static mindustry.world.meta.BlockGroup.transportation;
 
 
 public class Blocks1 {
-    public static final Seq<Item> 包涵章节1资源 = new Seq<>(), 仅章节1资源 = new Seq<>();
-    public static Block 翠矿, 陶矿, 缕矿, 离矿, 血晶石矿, 月银沙地板, 余烬矿,灵玉石矿,发光地板,
+    public static final Seq<Item> 包涵章节1资源 = new Seq<>(),
+            仅章节1资源 = new Seq<>();
+    public static Block 翠矿, 陶矿, 缕矿, 离矿, 血晶石矿, 月银沙地板, 余烬矿, 灵玉石矿, 发光地板,
             地板矿物;
     public static Block 幻液地板, 灵液地板, 灵脉地板,
             其他地板;
     public static Block 幻烬炼宝器, 运符炼宝器, 血晶炼宝器, 威灵炼宝器, 明宝聚宝炉, 萤玫化宝鼎,
             精焰化宝鼎, 幻烬聚宝炉, 灵玉炼宝器, 灵玉炼宝炉, 冰橡子炼玄器, 超烬化宝鼎, 灵液炼制炉,
-            精纯灵液炼制炉, 资源炼化器, 资源炼化炉, 幻液炼制炉, 筑基丹炼制炉,聚灵丹炼制炉,
+            精纯灵液炼制炉, 资源炼化器, 资源炼化炉, 幻液炼制炉, 筑基丹炼制炉, 聚灵丹炼制炉,
             工厂方块;
     public static Block 灵力收集器, 一品灵力产生器, 二品灵力产生器, 十字节点, 十字节点电池, 圆形节点, 灵力射线塔,
             电力方块;
@@ -87,9 +88,9 @@ public class Blocks1 {
             // albedo = 0.65f;
             localizedName = Core.bundle.get("Floor.guang");
             variants = 1;
-           // attributes.set(灵力收集, 2.25f);
+            // attributes.set(灵力收集, 2.25f);
             emitLight = true;
-            lightRadius = 70*8f;
+            lightRadius = 70 * 8f;
             lightColor = Color.valueOf("8cfffa").a(0.7f);
         }};
 
@@ -164,7 +165,7 @@ public class Blocks1 {
             emitLight = true;
             lightRadius = 13f;
             lightColor = Color.orange.cpy();
-           // lightColor = 缕.color.a(0.3f);
+            // lightColor = 缕.color.a(0.3f);
 
         }};
         离矿 = new OreBlock("离矿", 离) {{
@@ -206,13 +207,16 @@ public class Blocks1 {
             requirements(crafting, with(
                     翠, 75,
                     陶, 45
-                    ));
+            ));
             drawer = new DrawMulti(new DrawDefault(),
                     new DrawFlame() {
-                        {}
+                        {
+                        }
+
                         public void load(Block block) {
                             top = Core.atlas.find(幻烬炼宝器.name + "-top");
                         }
+
                         public void draw(Building build) {
                             if (build.warmup() > 0.0F && this.flameColor.a > 0.001F) {
                                 Draw.z(30.01F);
@@ -306,7 +310,7 @@ public class Blocks1 {
             requirements(crafting, with(
                     翠, 75,
                     陶, 45,
-                    运符,20
+                    运符, 20
             ));
             drawer = new DrawMulti(new DrawDefault(),
                     new DrawFlame() {
@@ -446,7 +450,6 @@ public class Blocks1 {
             consumeItem(运符, 2);
             drawer = new DrawMulti(new DrawRegion("-bottom"), new DrawLiquidTile(), new DrawRegion("-spinner", 3, true), new DrawDefault());
         }};
-
 
 
         灵液炼制炉 = new GenericCrafter("灵液炼制炉") {{
@@ -800,52 +803,53 @@ public class Blocks1 {
         }};
         灵力收集器 = new ThermalGenerator("灵力收集器") {
             {//√
-            localizedName = Core.bundle.get("power.lingli0");
-            description = Core.bundle.getOrNull("power.description.null");
-            displayEfficiencyScale = 1f / 9f;
-            powerProduction = 60 / 540f;//这个每单位是540电力，和其他发电机60不一样
-            //attribute = Attribute.heat;
-            attribute = 灵力收集;
-            generateEffect = Fx.lightningCharge;
-            effectChance = 0.04f;
-            size = 2;
-            ambientSound = Sounds.hum;
-            ambientSoundVolume = 0.06f;
-            drawer = new DrawMulti(
-                    new DrawRegion("-bottom"),
-                    new DrawLiquidTile(Liquids.water),
-                    new DrawDefault(),
-                    new DrawFlame() {
-                        {
-                        }
+                localizedName = Core.bundle.get("power.lingli0");
+                description = Core.bundle.getOrNull("power.description.null");
+                displayEfficiencyScale = 1f / 9f;
+                powerProduction = 60 / 540f;//这个每单位是540电力，和其他发电机60不一样
+                //attribute = Attribute.heat;
+                attribute = 灵力收集;
+                generateEffect = Fx.lightningCharge;
+                effectChance = 0.04f;
+                size = 2;
+                ambientSound = Sounds.hum;
+                ambientSoundVolume = 0.06f;
+                drawer = new DrawMulti(
+                        new DrawRegion("-bottom"),
+                        new DrawLiquidTile(Liquids.water),
+                        new DrawDefault(),
+                        new DrawFlame() {
+                            {
+                            }
 
-                        public void load(Block block) {
-                            top = Core.atlas.find(灵力收集器.name + "-top");
-                        }
+                            public void load(Block block) {
+                                top = Core.atlas.find(灵力收集器.name + "-top");
+                            }
 
-                        public void draw(Building build) {
-                            if (build.warmup() > 0.0F && this.flameColor.a > 0.001F) {
-                                Draw.z(30.01F);
-                                Draw.alpha(build.warmup());
-                                Draw.rect(top, build.x, build.y);
+                            public void draw(Building build) {
+                                if (build.warmup() > 0.0F && this.flameColor.a > 0.001F) {
+                                    Draw.z(30.01F);
+                                    Draw.alpha(build.warmup());
+                                    Draw.rect(top, build.x, build.y);
+                                }
                             }
                         }
-                    }
-            );
-            hasLiquids = true;
-            liquidCapacity = 20f;
-            outputLiquid = new LiquidStack(Liquids.water, 6f / 60f/4);
-            group = transportation;
-            requirements(power, with(
-                    翠, 65,
-                    陶, 80
-            ));
+                );
+                hasLiquids = true;
+                liquidCapacity = 20f;
+                outputLiquid = new LiquidStack(Liquids.water, 6f / 60f / 4);
+                group = transportation;
+                requirements(power, with(
+                        翠, 65,
+                        陶, 80
+                ));
                 buildType = Build::new;
-        }
-            class Build extends ThermalGenerator.ThermalGeneratorBuild{
-                public void drawLight(){
-                Drawf.light(x, y, (40f + Mathf.absin(10f, 5f)) * Math.min(productionEfficiency, 2f) * size, Color.valueOf("5313ba"), 0.7f);
             }
+
+            class Build extends ThermalGenerator.ThermalGeneratorBuild {
+                public void drawLight() {
+                    Drawf.light(x, y, (40f + Mathf.absin(10f, 5f)) * Math.min(productionEfficiency, 2f) * size, Color.valueOf("5313ba"), 0.7f);
+                }
             }
         };
         一品灵力产生器 = new ConsumeGenerator("一品灵力产生器") {{
@@ -868,7 +872,7 @@ public class Blocks1 {
                     幻烬, 40,
                     翠, 70,
                     陶, 60,
-                    缕,50
+                    缕, 50
             ));
         }};
         二品灵力产生器 = new ConsumeGenerator("二品灵力产生器") {{
@@ -918,37 +922,6 @@ public class Blocks1 {
             // consumePower(3f);
             //  consumeLiquid(Liquids.nitrogen, 3f / 60f);
         }};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

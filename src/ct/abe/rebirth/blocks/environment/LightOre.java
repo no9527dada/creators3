@@ -1,4 +1,4 @@
-package ct.chapter4;
+package ct.abe.rebirth.blocks.environment;
 
 import arc.graphics.Color;
 import mindustry.graphics.Drawf;
@@ -6,8 +6,8 @@ import mindustry.type.Item;
 import mindustry.world.Tile;
 import mindustry.world.blocks.environment.OreBlock;
 //没用到本类
-public class IightOre extends OreBlock {
-    public IightOre(String name, Item ore) {
+public class LightOre extends OreBlock {
+    public LightOre(String name, Item ore) {
         super(name);
         this.localizedName = ore.localizedName;
         this.itemDrop = ore;

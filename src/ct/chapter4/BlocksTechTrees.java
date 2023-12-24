@@ -6,11 +6,9 @@ package ct.chapter4;
 import mindustry.content.TechTree;
 import mindustry.type.ItemStack;
 
-import static ct.chapter4.CTBlocks.珊绒透筛器;
-import static ct.chapter4.CTBlocks.珊绒重组器;
+import static ct.chapter4.CTBlocks.*;
 import static ct.chapter4.CTItem.*;
 import static ct.chapter4.ItemsSMCyeLian.*;
-import static ct.chapter4.Planet4.coreT1;
 import static ct.type.CTTechTree.addToTree;
 
 public class BlocksTechTrees {

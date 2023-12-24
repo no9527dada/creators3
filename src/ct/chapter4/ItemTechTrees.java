@@ -11,7 +11,6 @@ import mindustry.type.ItemStack;
 import static ct.chapter4.CTBlocks.*;
 import static ct.chapter4.CTItem.*;
 import static ct.chapter4.ItemsSMChuaGong.*;
-import static ct.chapter4.Planet4.coreT1;
 import static ct.type.CTTechTree.addToTree;
 
 

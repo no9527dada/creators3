@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.blocks.productions;
 //多合成前置 1/2
 import arc.graphics.Color;
 import arc.scene.ui.ImageButton;

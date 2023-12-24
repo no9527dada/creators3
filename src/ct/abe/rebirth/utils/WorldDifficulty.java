@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.utils;
 
 import arc.Core;
 import arc.Events;
@@ -8,7 +8,7 @@ import mindustry.gen.Groups;
 import mindustry.gen.Unit;
 import mindustry.type.StatusEffect;
 
-public class CT3WorldDifficulty {
+public class WorldDifficulty {
     // public DifficultyConfigure 配置项 = new DifficultyConfigure();
     public static StatusEffect cheat;
 
@@ -34,7 +34,7 @@ public class CT3WorldDifficulty {
                 var MapName = Vars.state.map.name();
                 saveDefaultDifficulty(MapName);
                 setDifficulty(MapName);
-                Groups.unit.each(CT3WorldDifficulty::UnitDraw);
+                Groups.unit.each(WorldDifficulty::UnitDraw);
             }
         });
     }

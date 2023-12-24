@@ -1,7 +1,7 @@
 package ct.ahapter;
 
 import arc.Core;
-import ct.abe.CTCoreBlock;
+import ct.abe.rebirth.blocks.stroge.CTCoreBlock;
 import mindustry.type.Category;
 import mindustry.world.Block;
 import mindustry.world.meta.BuildVisibility;

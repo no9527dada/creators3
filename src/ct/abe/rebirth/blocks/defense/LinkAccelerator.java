@@ -1,4 +1,4 @@
-package ct.chapter4;
+package ct.abe.rebirth.blocks.defense;
 
 import arc.Core;
 import arc.graphics.Color;

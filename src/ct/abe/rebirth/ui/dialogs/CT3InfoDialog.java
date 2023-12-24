@@ -1,16 +1,13 @@
-package ct.abe;
+package ct.abe.rebirth.ui.dialogs;
 
 import arc.Core;
 import arc.graphics.Color;
 import arc.util.Align;
 import mindustry.Vars;
-import mindustry.gen.Icon;
 import mindustry.mod.Mods;
 import mindustry.ui.dialogs.BaseDialog;
 
-import static mindustry.Vars.ui;
-
-public class CT3UI {
+public class CT3InfoDialog {
     public static BaseDialog ct3info;
 
     public static void show() {
@@ -25,7 +22,7 @@ public class CT3UI {
             buttons.defaults().size(210, 64);
             buttons.button("@close", (this::hide)).size(100, 64);//关闭按钮
             buttons.button(Core.bundle.get("difficulty.game","难度设置"), (() -> {//游戏难度设置
-                new SettingsDialog().onDifficutyChange(e -> {
+                new SettingDifficultyDialog().onDifficutyChange(e -> {
                 }).show();
             })).size(150, 64);
             cont.pane((table -> {

@@ -1,4 +1,4 @@
-package ct.chapter4;
+package ct.abe.rebirth.blocks;
 
 import arc.Core;
 import arc.audio.Sound;
