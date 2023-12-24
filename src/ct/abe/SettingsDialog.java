@@ -58,7 +58,7 @@ public class SettingsDialog extends Dialog {
         table.stack(slider, content).width(Math.min(Core.graphics.getWidth() / 1.2f, 460f)).left().padTop(4f).get();
         table.row();
         container.add(table);
-    }//
+    }
 
     private Floatc difficutyValueChangeListener;
 
