@@ -69,8 +69,9 @@ var crafterMode = {
 }
 
 const modes = Seq.with(generatorMode, crafterMode);
+var environmentalCrafter = extend(GenericCrafter,"青羊子收集器" ,{//青羊子收集器
+//var environmentalCrafter = (CTBlocks.qiangyangzi, {//青羊子收集器
 
-var environmentalCrafter = extend(GenericCrafter, "青羊子收集器", {
     // 一些PowerGenerator和GenericCrafter的基础属性设置
     update: true,
     solid: true,
@@ -90,7 +91,6 @@ var environmentalCrafter = extend(GenericCrafter, "青羊子收集器", {
     ambientSoundVolume: 0.07,
     size: 4,
     hasLiquids: false,
-    
     configurable: true,
     
     // 一些PowerGenerator和GenericCrafter的方法
@@ -133,14 +133,15 @@ block.flags.with(BlockFlag.factory);
 block.setupRequirements(Category.crafting, BuildVisibility.shown, ItemStack.with(
     CTItem.翠灵晶, 60,
                     CTItem.混沌晶体, 35,
-                   CTItem.夜灵核心, 10,
-                   CTItem.魔能晶, 40,
+                    CTItem.夜灵核心, 10,
+                    CTItem.魔能晶, 40,
                     CTItem.灵魂束缚容器, 20
 ));
 //block.consumeItems(ItemStack.with(Items.coal, 1, Items.sand, 2));
 block.consumeItems(ItemStack.with());
 block.consumeItem(CTItem.夜灵珠).boost();
-
+ //block.speedBoost = 30
+ // block.       hasBoost = false;
 block.config(Integer, (build, num) => {
     build.setModeIndex(num);
 });

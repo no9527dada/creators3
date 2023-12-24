@@ -1,12 +1,11 @@
 {
-  "name": "ctrebirth",
-  "main": "ctrebirth.CTRebirth",
-  "displayName": "创世神3-重生",
-  "author": "[pink]编[cyan]号[red]95[violet]27",
-  "description": "
- 暂无描述
-",
-  "version": "0.1",
-  "minGameVersion": 140
+  "name": "ct",
+  "main": "ct.CTRebirth",
+  "displayName": "创世神3-仙明决",
+  "author": "[pink]编[cyan]号[red]95[violet]27，皴皲",
+  "repo": "no9527dada/creators3",
+  "description": "策划:9527，贴图:皴皲，世处逻辑:咕咕点心",
+  "version": "1.07.1",
+  "minGameVersion": 146
 }
 //hideBrowser = true //不加入模组浏览器

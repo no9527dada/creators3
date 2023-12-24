@@ -1,8 +1,8 @@
 #define HIGHP
 
 //shades of cryofluid
-#define S1 vec3(34.0, 23.0, 91.0) / 100.0
-#define S2 vec3(23.0, 6.0, 64.0) / 100.0
+#define S1 vec3(41.0, 97.0, 57.0) / 100.0
+#define S2 vec3(11.0, 73.0, 31.0) / 100.0
 #define NSCALE 100.0 / 2.0
 
 uniform sampler2D u_texture;
@@ -19,7 +19,7 @@ void main(){
     vec2 coords = vec2(c.x * u_resolution.x + u_campos.x, c.y * u_resolution.y + u_campos.y);
 
     float btime = u_time / 5000.0;
-    float wave = abs(sin(coords.x * 1.1 + coords.y) + 0.1 * sin(2.5 * coords.x) + 0.15 * sin(3.0 * coords.y)) / 30.0;
+    float wave = abs(sin(coords.x * 1.1 + coords.y) + 0.1 * sin(2.5 * coords.x) + 0.15 * sin(3.0 * coords.y)) / 10.0;
     float noise = wave + (texture2D(u_noise, (coords) / NSCALE + vec2(btime) * vec2(-0.2, 0.8)).r + texture2D(u_noise, (coords) / NSCALE + vec2(btime * 1.1) * vec2(0.8, -1.0)).r) / 2.0;
     vec4 color = texture2D(u_texture, c);
 

@@ -17,7 +17,7 @@ var block;
 var itemIconSize = Vars.iconSmall / 4;
 
 var drillAreaSize = 5;
-let drill = extend(Drill, "激光钻头", {
+let drill = extend(Drill, "gravity_drill", {
     tier: 5,
     drillTime: 250,
     liquidBoostIntensity: 1.5,
@@ -299,8 +299,9 @@ drill.buildType = () => {
             if (dominantItem == null) {
                 this.setDrillItem(block.getReturnItem());
             }
-
-            this.dominantItems = drillTileMap.get(this.dominantItem).size;
+            
+            const tiles = drillTileMap.get(this.dominantItem);
+            this.dominantItems = tiles == null ? 0 : tiles.size;
         },
 
         buildConfiguration(table) {
@@ -331,7 +332,7 @@ drill.buildType = () => {
 
             let seq = drillTileMap.get(this.dominantItem);
 
-            if (seq.isEmpty()) {
+            if (seq == null || seq.isEmpty()) {
                 return;
             }
 
@@ -367,7 +368,8 @@ drill.buildType = () => {
             this.dominantItem = item;
 
             if (drillTileMap != null) {
-                this.dominantItems = drillTileMap.get(item).size;
+                let seq = drillTileMap.get(item);
+                this.dominantItems = seq == null ? 0 : seq.size;
             }
         },
 
