@@ -53,7 +53,6 @@ public class SettingsDialog extends Dialog {
             }
             Core.settings.get("游戏难度", true);
             new ct.abe.CT3WorldDifficulty().set();
-            //
         });
         slider.change();
         table.stack(slider, content).width(Math.min(Core.graphics.getWidth() / 1.2f, 460f)).left().padTop(4f).get();
