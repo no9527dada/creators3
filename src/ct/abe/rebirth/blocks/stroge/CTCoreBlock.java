@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.blocks.stroge;
 
 import mindustry.game.Team;
 import mindustry.world.Tile;

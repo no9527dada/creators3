@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package ct.chapter4;
+package ct.abe.rebirth.blocks;
 
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;
@@ -11,12 +11,9 @@ import arc.util.Time;
 import java.util.Iterator;
 import mindustry.Vars;
 import mindustry.gen.Building;
-import mindustry.type.Category;
 import mindustry.type.Item;
-import mindustry.type.ItemStack;
 import mindustry.type.Liquid;
 import mindustry.world.blocks.power.PowerNode;
-import mindustry.world.meta.BuildVisibility;
 
 public class XVXSource extends PowerNode {
     public XVXSource(String name) {

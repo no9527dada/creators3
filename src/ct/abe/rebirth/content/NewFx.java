@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.content;
 
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;
@@ -9,7 +9,6 @@ import arc.math.Mathf;
 import mindustry.entities.Effect;
 import mindustry.graphics.Drawf;
 import mindustry.graphics.Pal;
-import mindustry.logic.LogicFx;
 
 import static arc.graphics.g2d.Draw.color;
 import static arc.graphics.g2d.Lines.stroke;

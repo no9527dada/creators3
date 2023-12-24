@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.ui.dialogs;
 /*
  *@Author:LYBF
  *@Date  :2023/12/24
@@ -17,11 +17,11 @@ import java.util.Objects;
 
 import static arc.Core.bundle;
 
-public class SettingsDialog extends Dialog {
+public class SettingDifficultyDialog extends Dialog {
 
     private Table container;
 
-    public SettingsDialog() {
+    public SettingDifficultyDialog() {
         //标题名
         super(bundle.get("settings", "Settings"));
         container = new Table();
@@ -66,7 +66,7 @@ public class SettingsDialog extends Dialog {
     /*
      *监听难度修改事件
      */
-    public SettingsDialog onDifficutyChange(Floatc listener) {
+    public SettingDifficultyDialog onDifficutyChange(Floatc listener) {
         this.difficutyValueChangeListener = listener;
         return this;
     }

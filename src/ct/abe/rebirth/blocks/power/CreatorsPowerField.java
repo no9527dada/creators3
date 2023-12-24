@@ -1,4 +1,4 @@
-package ct.chapter4;
+package ct.abe.rebirth.blocks.power;
 /*电力力场*/
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;

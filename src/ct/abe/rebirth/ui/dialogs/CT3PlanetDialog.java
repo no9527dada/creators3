@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.ui.dialogs;
 //区块名显示
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;

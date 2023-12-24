@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.blocks.productions;
 /*多合成并行*/
 import arc.Core;
 import arc.graphics.Color;
@@ -9,7 +9,6 @@ import arc.util.Scaling;
 import arc.util.Strings;
 import arc.util.io.Reads;
 import arc.util.io.Writes;
-import ct.abe.CreatorsRecipe;
 import mindustry.content.Fx;
 import mindustry.entities.Effect;
 import mindustry.gen.Building;

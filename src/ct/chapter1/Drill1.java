@@ -1,7 +1,7 @@
 package ct.chapter1;
 
 import arc.Core;
-import ct.abe.CTBurstDrill;
+import ct.abe.rebirth.blocks.productions.CTBurstDrill;
 import ct.abe.CTDrawMultiWeave;
 import mindustry.content.Fx;
 import mindustry.content.Liquids;

@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.blocks.productions;
 
 //多合成前置 2/2
 import arc.scene.ui.layout.*;

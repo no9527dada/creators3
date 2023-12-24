@@ -25,21 +25,9 @@ public class Planet4 {
     public static Planet
             Planet4,冥神星;
 
-   public static Block
-            coreT1,coreT2,coreT3;
+
     public static void load(){
         //核心
-          coreT1 = new CoreBlock("core-shard"){{
-            requirements(Category.effect, BuildVisibility.editorOnly, with( 魂石,300, 冥石,500));
-            alwaysUnlocked = true;//默认解锁
-            incinerateNonBuildable = true;//焚烧不可建造的资源
-            isFirstTier = true;
-            unitType = UnitTypes.alpha;
-            health = 1100;
-            itemCapacity = 6000;
-            size = 3;
-            unitCapModifier = 0;
-        }};
 
           //星球
         Planet4 = new Planet("Planet4", Planets.sun, 1f, 3){{

@@ -1,4 +1,4 @@
-package ct.abe;
+package ct.abe.rebirth.blocks.productions;
 /*选择多合成*/
 
 import arc.Core;
@@ -37,7 +37,7 @@ import mindustry.world.meta.StatUnit;
 
 import static arc.Core.bundle;
 import static arc.Core.scene;
-import static ct.abe.CreatorsRecipe.*;
+import static ct.abe.rebirth.blocks.productions.CreatorsRecipe.*;
 import static mindustry.Vars.headless;
 
 public class CreatorsMultiCrafter extends GenericCrafter {
