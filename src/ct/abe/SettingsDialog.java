@@ -37,7 +37,7 @@ public class SettingsDialog extends Dialog {
 
     private void addChangeDiffcutySlider() {
         Table table = new Table();
-        Slider slider = new Slider(0, 10, 1, false);
+        Slider slider = new Slider(1, 4, 1, false);
         slider.setValue(0);
         Label value = new Label("", Styles.outlineLabel);
         Table content = new Table();
@@ -47,12 +47,13 @@ public class SettingsDialog extends Dialog {
         content.touchable = Touchable.disabled;
         slider.changed(() -> {
             //滑动时触发
-            value.setText("游戏难度" + slider.getValue());
+            int value1 = (int)slider.getValue();
+            value.setText(bundle.get(("CT3Difficulty-" + value1)));
             if (!Objects.isNull(difficutyValueChangeListener)) {
                 difficutyValueChangeListener.get(slider.getValue());
             }
-            Core.settings.get("游戏难度", true);
-            new ct.abe.CT3WorldDifficulty().set();
+            //保存难度
+            Core.settings.put("游戏难度", value1);
         });
         slider.change();
         table.stack(slider, content).width(Math.min(Core.graphics.getWidth() / 1.2f, 460f)).left().padTop(4f).get();

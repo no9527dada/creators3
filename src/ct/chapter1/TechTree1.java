@@ -9,7 +9,7 @@ import mindustry.game.Objectives;
 import mindustry.type.ItemStack;
 
 import static ct.ahapter.境界科技研究.*;
-import static ct.ahapter.核心方块.*;
+import static ct.ahapter.CoreBlocks.*;
 import static ct.chapter1.Blocks1.*;
 import static ct.chapter1.Drill1.*;
 import static ct.chapter1.Item1.*;

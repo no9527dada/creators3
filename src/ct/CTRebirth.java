@@ -9,10 +9,7 @@ import arc.struct.ObjectMap;
 import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
-import ct.abe.CT3PlanetDialog;
-import ct.abe.CT3UI;
-import ct.abe.LogicFxInit;
-import ct.abe.NewFx;
+import ct.abe.*;
 import ct.ahapter.CreatorsModJS;
 import ct.ahapter.原版修改;
 import ct.ahapter.环境植被;
@@ -68,6 +65,8 @@ public class CTRebirth extends Mod {
     public void loadContent() {
         // Team.sharded.color.set(0.0F, 153.0F, 255.0F, 64.0F);//黄队伍颜色
         //Team.crux.color.set(79.0F, 181.0F, 103.0F, 255.0F);//红队伍颜色
+        //难度修改
+        CT3WorldDifficulty.init();
         NewFx.load();
         环境植被.load();
         chapter1.load();
@@ -151,7 +150,7 @@ public class CTRebirth extends Mod {
 
 
         //跳波惩罚
-        new ct.abe.波次();
+        new Wave();
 
         //檢測更新
         // Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
@@ -160,7 +159,7 @@ public class CTRebirth extends Mod {
         Events.on(EventType.ClientLoadEvent.class, e -> CT3选择方块显示图标());
 
         //开屏显示
-        Events.on(EventType.ClientLoadEvent.class, e -> CT3UI.开屏显示());
+        Events.on(EventType.ClientLoadEvent.class, e -> CT3UI.show());
 
 
         //科技树全显
