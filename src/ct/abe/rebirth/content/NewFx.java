@@ -6,9 +6,11 @@ import arc.graphics.g2d.Fill;
 import arc.graphics.g2d.Lines;
 import arc.math.Angles;
 import arc.math.Mathf;
+import ct.abe.rebirth.utils.LogicFxInit;
 import mindustry.entities.Effect;
 import mindustry.graphics.Drawf;
 import mindustry.graphics.Pal;
+import mindustry.logic.LogicFx;
 
 import static arc.graphics.g2d.Draw.color;
 import static arc.graphics.g2d.Lines.stroke;
@@ -68,7 +70,11 @@ public class NewFx {
 
     }
 
-    public void init() {
+    public static void init() {
         //
+        //世处注入特效
+        LogicFxInit.injectEffect("D1", new LogicFx.EffectEntry(NewFx.D1).color().size());
+        LogicFxInit.injectEffect("D2", new LogicFx.EffectEntry(NewFx.D2).color().size());
+
     }
 }

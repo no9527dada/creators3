@@ -9,26 +9,17 @@ import arc.struct.ObjectMap;
 import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
-import ct.abe.rebirth.utils.Wave;
-import ct.ahapter.CreatorsModJS;
-import ct.ahapter.原版修改;
-import ct.ahapter.环境植被;
-import ct.chapter1.chapter1;
-import ct.chapter2.chapter2;
-import ct.chapter3.chapter3;
-import ct.chapter4.chapter4;
-import ct.chapter5.chapter5;
-import ct.abe.rebirth.content.NewFx;
+import ct.abe.rebirth.content.Loader;
 import ct.abe.rebirth.ui.dialogs.CT3InfoDialog;
 import ct.abe.rebirth.ui.dialogs.CT3PlanetDialog;
-import ct.abe.rebirth.utils.WorldDifficulty;
-import ct.abe.rebirth.utils.LogicFxInit;
+import ct.abe.rebirth.utils.Wave;
+import ct.abe.rebirth.utils.原版修改;
+import ct.ahapter.CreatorsModJS;
 import ct.type.CTResearchDialog;
 import ct.ui.CreatorsClassification;
 import mindustry.Vars;
 import mindustry.game.EventType;
 import mindustry.graphics.Layer;
-import mindustry.logic.LogicFx;
 import mindustry.mod.Mod;
 import mindustry.mod.Scripts;
 import mindustry.type.Planet;
@@ -71,20 +62,9 @@ public class CTRebirth extends Mod {
         // Team.sharded.color.set(0.0F, 153.0F, 255.0F, 64.0F);//黄队伍颜色
         //Team.crux.color.set(79.0F, 181.0F, 103.0F, 255.0F);//红队伍颜色
         //难度修改
-        WorldDifficulty.init();
-        NewFx.load();
-        环境植被.load();
-        chapter1.load();
-        chapter2.load();
-        chapter3.load();
-        chapter4.load();
-        chapter5.load();
-
+        //由Loader统一初始化（Block/Item/Turret/Unit/TechTree）等数据
+        Loader.load();
         原版修改.load();
-
-        //世处注入特效
-        LogicFxInit.injectEffect("D1", new LogicFx.EffectEntry(NewFx.D1).color().size());
-        LogicFxInit.injectEffect("D2", new LogicFx.EffectEntry(NewFx.D2).color().size());
 
 
         new CreatorsClassification();
@@ -184,7 +164,6 @@ public class CTRebirth extends Mod {
             Objects.requireNonNull(planet);
             Time.runTask(1.0F, planet::hide);
         });
-
 
 
     }
