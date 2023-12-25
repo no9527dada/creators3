@@ -8,7 +8,7 @@ function CreatorsPackage(name) {
 var CreatorsJavaPack = CreatorsPackage('ct')
 importPackage(CreatorsJavaPack)
 importPackage(CreatorsJavaPack.ahapter)
-importPackage(CreatorsJavaPack.chapter1)
+//importPackage(CreatorsJavaPack.chapter1)
 importPackage(CreatorsJavaPack.draw)
 importPackage(CreatorsJavaPack.type)
 
