@@ -11,7 +11,7 @@ import mindustry.type.UnitType;
 import mindustry.type.ammo.ItemAmmoType;
 import mindustry.world.meta.Env;
 
-import static ct.chapter1.Item1.陶;
+import static ct.abe.rebirth.content.Items.陶;
 
 public class lib {
 

@@ -9,24 +9,17 @@ import arc.struct.ObjectMap;
 import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
-import ct.abe.CT3PlanetDialog;
-import ct.abe.CT3UI;
-import ct.abe.LogicFxInit;
-import ct.abe.NewFx;
+import ct.abe.rebirth.content.Loader;
+import ct.abe.rebirth.ui.dialogs.CT3InfoDialog;
+import ct.abe.rebirth.ui.dialogs.CT3PlanetDialog;
+import ct.abe.rebirth.utils.Wave;
+import ct.abe.rebirth.utils.原版修改;
 import ct.ahapter.CreatorsModJS;
-import ct.ahapter.原版修改;
-import ct.ahapter.环境植被;
-import ct.chapter1.chapter1;
-import ct.chapter2.chapter2;
-import ct.chapter3.chapter3;
-import ct.chapter4.chapter4;
-import ct.chapter5.chapter5;
 import ct.type.CTResearchDialog;
 import ct.ui.CreatorsClassification;
 import mindustry.Vars;
 import mindustry.game.EventType;
 import mindustry.graphics.Layer;
-import mindustry.logic.LogicFx;
 import mindustry.mod.Mod;
 import mindustry.mod.Scripts;
 import mindustry.type.Planet;
@@ -68,19 +61,10 @@ public class CTRebirth extends Mod {
     public void loadContent() {
         // Team.sharded.color.set(0.0F, 153.0F, 255.0F, 64.0F);//黄队伍颜色
         //Team.crux.color.set(79.0F, 181.0F, 103.0F, 255.0F);//红队伍颜色
-        NewFx.load();
-        环境植被.load();
-        chapter1.load();
-        chapter2.load();
-        chapter3.load();
-        chapter4.load();
-        chapter5.load();
-
+        //难度修改
+        //由Loader统一初始化（Block/Item/Turret/Unit/TechTree）等数据
+        Loader.load();
         原版修改.load();
-
-        //世处注入特效
-        LogicFxInit.injectEffect("D1", new LogicFx.EffectEntry(ct.abe.NewFx.D1).color().size());
-        LogicFxInit.injectEffect("D2", new LogicFx.EffectEntry(ct.abe.NewFx.D2).color().size());
 
 
         new CreatorsClassification();
@@ -151,7 +135,7 @@ public class CTRebirth extends Mod {
 
 
         //跳波惩罚
-        new ct.abe.波次();
+        new Wave();
 
         //檢測更新
         // Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
@@ -160,7 +144,7 @@ public class CTRebirth extends Mod {
         Events.on(EventType.ClientLoadEvent.class, e -> CT3选择方块显示图标());
 
         //开屏显示
-        Events.on(EventType.ClientLoadEvent.class, e -> CT3UI.开屏显示());
+        Events.on(EventType.ClientLoadEvent.class, e -> CT3InfoDialog.show());
 
 
         //科技树全显
@@ -182,14 +166,6 @@ public class CTRebirth extends Mod {
         });
 
 
-/*        //难度调整难度：
-        Events.on(EventType.ClientLoadEvent.class, e -> {
-            ui.settings.game.sliderPref(
-                    "游戏难度", 3, 1, 4, 1, i -> Core.bundle.format("CT3Difficulty-" + i)
-            );
-            Core.settings.get("游戏难度", true);
-            new ct.abe.CT3WorldDifficulty().set();
-        });*/
     }
 
 

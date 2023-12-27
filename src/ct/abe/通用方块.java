@@ -1,6 +1,6 @@
 package ct.abe;
 
-import ct.chapter4.XVXSource;
+import ct.abe.rebirth.blocks.XVXSource;
 import mindustry.type.Category;
 import mindustry.type.ItemStack;
 import mindustry.world.meta.BuildVisibility;
