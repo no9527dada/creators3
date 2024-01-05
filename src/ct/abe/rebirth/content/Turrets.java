@@ -170,8 +170,8 @@ public class Turrets {
             shootType = Bullet刺镰;
         }};
         赤狐 = new ItemTurret("赤狐"){{
-          //  localizedName = Core.bundle.get("Turret.huohu");
-            description = Core.bundle.getOrNull("Turret.description.huohu");
+            localizedName = Core.bundle.get("Turret.cihu");
+            description = Core.bundle.getOrNull("Turret.description.cihu");
             requirements(Category.turret, with(
                     缕,50,幻烬,150,翠,90 ,陶 ,50
             ));

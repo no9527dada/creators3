@@ -21,7 +21,7 @@ public class Loader {
         //初始化星球
         Planets.load();
         //初始化地图
-        Maps.load();
+        Maps1.load();
         //初始化自定义特效
         NewFx.load();
         //注入自定义特效
@@ -32,8 +32,8 @@ public class Loader {
         TechTree1.load();
         TechTree2.load();
         TechTree3.load();
-        TechTree4.load();
-        TechTree5.load();
+       // TechTree4.load();
+        //TechTree5.load();
 
     }
 

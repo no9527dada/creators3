@@ -80,10 +80,10 @@ public class NewFx {
 
     //子弹特效  子弹效果
     static Effect  赤狐trailEffect(Color 颜色){
-        return   new Effect(50, e -> {
+        return   new Effect(20, e -> {
             color(颜色);
             Fill.circle(e.x, e.y, e.rotation * e.fout());
-            randLenVectors(e.id, 5, 2f + 23f * e.finpow(), (x, y) -> {
+            randLenVectors(e.id, 3, 2f + 15f * e.finpow(), (x, y) -> {
                 Fill.circle(e.x + x, e.y + y, e.fout() * 3f + 0.5f);
             });
         });

@@ -28,8 +28,8 @@ public class Wave {
                     if (multiple >= 0) {
                         Vars.state.rules.tags.put("增加敌对伤害生命倍率", String.valueOf(multiple + 0.2f));
                     }
-                    Vars.state.rules.teams.get(Team.crux).unitDamageMultiplier = multiple;
-                    Vars.state.rules.teams.get(Team.crux).unitHealthMultiplier = multiple;
+                    Vars.state.rules.teams.get(Team.malis).unitDamageMultiplier = multiple;
+                    Vars.state.rules.teams.get(Team.malis).unitHealthMultiplier = multiple;
                     showTips(displayTime, "敌人攻击血量已增加" + String.format("%.2f", multiple * 10) + "%", Color.white, Color.red);
                 });
             }

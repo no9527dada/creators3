@@ -11,7 +11,7 @@ import mindustry.type.ItemStack;
 import static ct.ahapter.境界科技研究.*;
 import static ct.abe.rebirth.content.Blocks.*;
 import static ct.abe.rebirth.content.Items.*;
-import static ct.abe.rebirth.content.Maps.*;
+import static ct.abe.rebirth.content.Maps1.*;
 import static ct.abe.rebirth.content.Turrets.*;
 import static ct.type.CTTechTree.addToTree;
 
@@ -171,6 +171,10 @@ public class TechTree1 {
             addToTree(通道分支, 曲沿通道,  null, Seq.with(
                     new Objectives.Research(core2),//研究方块或资源
                     new Objectives.SectorComplete(曲沿通道)//占领地图
+            ));
+            addToTree(倾巢而出, 曲沿通道,  null, Seq.with(
+                    new Objectives.Research(赤狐),//研究方块或资源
+                    new Objectives.SectorComplete(通道分支)//占领地图
             ));
         });
     }

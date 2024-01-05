@@ -7,7 +7,7 @@ import mindustry.ai.types.BuilderAI;
 
 import static ct.abe.rebirth.content.Units.*;
 import static mindustry.content.UnitTypes.nova;
-
+////InitChapter1Units.核心机0号.killable = true
 public class InitChapter1Units {
 
     public static void load() {

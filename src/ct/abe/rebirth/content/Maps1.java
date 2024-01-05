@@ -2,8 +2,8 @@ package ct.abe.rebirth.content;
 
 import mindustry.type.SectorPreset;
 
-public class Maps {
-    public static SectorPreset 跌落遗境,异声,神秘少女,洞穴躲藏,洞穴深处,曲沿通道,通道分支
+public class Maps1 {
+    public static SectorPreset 跌落遗境,异声,神秘少女,洞穴躲藏,洞穴深处,曲沿通道,通道分支,倾巢而出
             ;
     public static void load() {
         跌落遗境 = new SectorPreset("跌落遗境", Planets.Planet1, 0) {{
@@ -64,6 +64,13 @@ public class Maps {
             addStartingItems = true;//添加初始资源（地图编辑器）
             noLighting = true;
         }};
-
+        倾巢而出 = new SectorPreset("8倾巢而出", Planets.Planet1, 8) {{
+            localizedName ="倾巢而出";
+            description="已然接近老巢，这里有大量低阶妖兽盘踞";
+            captureWave = 52;
+            difficulty = 13;
+            addStartingItems = true;//添加初始资源（地图编辑器）
+            noLighting = true;
+        }};
     }
 }

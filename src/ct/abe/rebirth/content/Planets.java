@@ -87,7 +87,7 @@ public class Planets {
                 r.loadout = ItemStack.list(陶, 100);
 
 
-                r.waveTeam = Team.crux;
+                r.waveTeam = Team.malis;
                 r.placeRangeCheck = false;
                 r.fog = true;
                 r.staticFog = true;

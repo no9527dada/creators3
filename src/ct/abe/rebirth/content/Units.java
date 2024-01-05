@@ -20,7 +20,7 @@ import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 
 //Unit1.核心机0号.speed=3
-//Unit1.核心机0号.killable = true
+//Units.核心机0号.killable = true
 public class Units {
     //NPC
     public static UnitType 珮思思0, 探子, 珮思思1, 珮思思2, 鹿恒1;
