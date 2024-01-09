@@ -15,6 +15,7 @@ import ct.abe.rebirth.ui.dialogs.CT3PlanetDialog;
 import ct.abe.rebirth.utils.Wave;
 import ct.abe.rebirth.utils.原版修改;
 import ct.ahapter.CreatorsModJS;
+import ct.ahapter.环境植被;
 import ct.type.CTResearchDialog;
 import ct.ui.CreatorsClassification;
 import mindustry.Vars;
@@ -63,6 +64,7 @@ public class CTRebirth extends Mod {
         //Team.crux.color.set(79.0F, 181.0F, 103.0F, 255.0F);//红队伍颜色
         //难度修改
         //由Loader统一初始化（Block/Item/Turret/Unit/TechTree）等数据
+        环境植被.load();
         Loader.load();
         原版修改.load();
 

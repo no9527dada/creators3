@@ -1,15 +1,41 @@
 package ct.abe.rebirth.content;
 
+import arc.Core;
 import arc.graphics.Color;
 import mindustry.world.blocks.environment.Floor;
 import mindustry.world.blocks.environment.Seaweed;
 
+import static ct.abe.rebirth.content.Blocks.发光地板;
 import static mindustry.content.Blocks.bluemat;
 
 public class Floors {
-    public static Floor 烟冰地板, 烟冰地板snow;
+    public static Floor 烟冰地板, 烟冰地板snow, 发光地板1,发光地板2,发光地板3,发光地板4,发光地板5;
     public static Seaweed 树;
     public static void load() {
+        发光地板1 = new Floor("9关发光地板1") {{
+        localizedName = "";
+            variants = 1;
+            // attributes.set(灵力收集, 2.25f);
+            emitLight = true;
+            lightRadius =500 * 8f;
+            lightColor = Color.valueOf("000000").a(0.2f);
+        }};
+        发光地板2 = new Floor("9关发光地板2") {{
+            localizedName = "";
+            variants = 1;
+            // attributes.set(灵力收集, 2.25f);
+            emitLight = true;
+            lightRadius =500 * 8f;
+            lightColor = Color.valueOf("000000").a(0.4f);
+        }};
+        发光地板3 = new Floor("9关发光地板3") {{
+            localizedName = "";
+            variants = 1;
+            // attributes.set(灵力收集, 2.25f);
+            emitLight = true;
+            lightRadius =500 * 8f;
+            lightColor = Color.valueOf("000000").a(0.6f);
+        }};
         烟冰地板 = new Floor("YanBingFloor") {{
             dragMultiplier = 0.35f;
             speedMultiplier = 0.9f;
