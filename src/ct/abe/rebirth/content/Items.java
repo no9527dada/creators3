@@ -6,7 +6,6 @@ import mindustry.type.Item;
 import mindustry.type.Liquid;
 
 import static mindustry.content.Items.*;
-import static mindustry.content.Items.dormantCyst;
 
 public class Items {
     public static final Seq<Item>
@@ -75,7 +74,7 @@ public class Items {
         );
 
         mod资源.addAll(
-                陶, 翠, 月银沙, 缕, 离, 灵玉, 血晶, 运符, 威灵, 明宝, 精焰, 萤玫, 冰橡子, 余烬, 幻烬, 超烬, 废丹, 筑基丹
+                物品, 陶, 翠, 月银沙, 缕, 离, 灵玉, 血晶, 运符, 威灵, 明宝, 精焰, 萤玫, 冰橡子, 余烬, 幻烬, 超烬, 废丹, 筑基丹
         );
 
 

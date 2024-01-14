@@ -1,18 +1,17 @@
 package ct.abe.rebirth.content;
 
 import arc.Core;
-
 import arc.struct.Seq;
 import ct.ahapter.境界科技研究;
 import mindustry.content.TechTree;
 import mindustry.game.Objectives;
 import mindustry.type.ItemStack;
 
-import static ct.ahapter.境界科技研究.*;
 import static ct.abe.rebirth.content.Blocks.*;
 import static ct.abe.rebirth.content.Items.*;
 import static ct.abe.rebirth.content.Maps1.*;
 import static ct.abe.rebirth.content.Turrets.*;
+import static ct.ahapter.境界科技研究.*;
 import static ct.type.CTTechTree.addToTree;
 
 //     researchCostMultiplier = 1.5f;//科技树中的研究资源倍率
@@ -61,19 +60,21 @@ public class TechTree1 {
             addToTree(反向溢流门, 溢流门);
             addToTree(灵玉运输桥, 陶玉运输带);
             addToTree(萤玫运输桥, 灵玉运输桥);
-                addToTree(物品卸载器, 路由器,null, Seq.with(
-                        new Objectives.SectorComplete(通道分支)//占领地图
-                ));
-           // addToTree(仓库, 物品卸载器);//打第7-2关
-           // addToTree(大仓库, 仓库);
+            addToTree(物品卸载器, 路由器, null, Seq.with(
+                    new Objectives.SectorComplete(通道分支)//占领地图
+            ));
+            addToTree(仓库, 物品卸载器, null, Seq.with(
+                    new Objectives.SectorComplete(倾巢而出)//占领地图
+            ));
+            // addToTree(大仓库, 仓库);
 
 
             addToTree(液体导管, core0);
             addToTree(液体路由器, 液体导管);
             addToTree(液体连接器, 液体导管);
-                     addToTree(灵化液体导管, 液体导管);
-            addToTree(液体桥接器, 液体导管,null,
-                    Seq.with( new Objectives.SectorComplete(洞穴躲藏))//占领地图)
+            addToTree(灵化液体导管, 液体导管);
+            addToTree(液体桥接器, 液体导管, null,
+                    Seq.with(new Objectives.SectorComplete(洞穴躲藏))//占领地图)
             );
             addToTree(远程液体桥接器, 液体桥接器);
             addToTree(液仓, 液体桥接器);
@@ -82,7 +83,7 @@ public class TechTree1 {
             addToTree(陶玉钻头, core0, ItemStack.with(
                     陶, 100
             ));
-            addToTree(灵玉钻头, 陶玉钻头,null, Seq.with(
+            addToTree(灵玉钻头, 陶玉钻头, null, Seq.with(
                     new Objectives.SectorComplete(神秘少女)//占领地图
             ));
            addToTree(威灵钻头, 灵玉钻头,null, Seq.with(
@@ -95,34 +96,40 @@ public class TechTree1 {
             addToTree(运符炼宝器, 幻烬炼宝器,null, Seq.with(
                     new Objectives.SectorComplete(异声)//占领地图
             ));
-            addToTree(焚化炉, 幻烬炼宝器,null, Seq.with(
+            addToTree(焚化炉, 幻烬炼宝器, null, Seq.with(
                     new Objectives.SectorComplete(异声)//占领地图
             ));
-            addToTree(灵玉炼宝器, 运符炼宝器,null, Seq.with(
+            addToTree(灵玉炼宝器, 运符炼宝器, null, Seq.with(
                     new Objectives.SectorComplete(神秘少女)//占领地图
             ));
-            addToTree(灵液炼制炉, 灵玉炼宝器,null, Seq.with(
+            addToTree(灵液炼制炉, 灵玉炼宝器, null, Seq.with(
                     new Objectives.SectorComplete(洞穴躲藏)//占领地图
             ));
-            addToTree(血晶炼宝器, 灵玉炼宝器,null, Seq.with(
-            new Objectives.SectorComplete(洞穴躲藏)//占领地图
+            addToTree(血晶炼宝器, 灵玉炼宝器, null, Seq.with(
+                    new Objectives.SectorComplete(洞穴躲藏)//占领地图
             ));
-            addToTree(威灵炼宝器, 灵液炼制炉,null, Seq.with(
+            addToTree(威灵炼宝器, 灵液炼制炉, null, Seq.with(
                     new Objectives.SectorComplete(曲沿通道)//占领地图
             ));
+            addToTree(幻烬聚宝炉, 幻烬炼宝器, null, Seq.with(
+                    new Objectives.SectorComplete(倾巢而出)//占领地图
+            ));
+            addToTree(萤玫化宝鼎, 威灵炼宝器, null, Seq.with(
+                    new Objectives.SectorComplete(暗袭兽)//占领地图
+            ));
             /**************/
-            addToTree(陶墙1, core0,null, Seq.with(
+            addToTree(陶墙1, core0, null, Seq.with(
                     new Objectives.SectorComplete(异声)//占领地图
             ));
             addToTree(陶墙2, 陶墙1);
-            addToTree(幻烬墙, 陶墙2,null,
-                    Seq.with( new Objectives.SectorComplete(洞穴躲藏))//占领地图)
+            addToTree(幻烬墙, 陶墙2, null,
+                    Seq.with(new Objectives.SectorComplete(洞穴躲藏))//占领地图)
             );
-            addToTree(缕墙, 幻烬墙,null,
-                    Seq.with( new Objectives.SectorComplete(洞穴深处))//占领地图)
+            addToTree(缕墙, 幻烬墙, null,
+                    Seq.with(new Objectives.SectorComplete(洞穴深处))//占领地图)
             );
-            addToTree(灵化缕墙, 缕墙,null,
-                    Seq.with( new Objectives.SectorComplete(曲沿通道))//占领地图)
+            addToTree(灵化缕墙, 缕墙, null,
+                    Seq.with(new Objectives.SectorComplete(曲沿通道))//占领地图)
             );
 
             /**************/
@@ -168,13 +175,17 @@ public class TechTree1 {
             addToTree(曲沿通道, 洞穴深处,  null, Seq.with(
                     new Objectives.SectorComplete(洞穴深处)//占领地图
             ));
-            addToTree(通道分支, 曲沿通道,  null, Seq.with(
+            addToTree(通道分支, 曲沿通道, null, Seq.with(
                     new Objectives.Research(core2),//研究方块或资源
                     new Objectives.SectorComplete(曲沿通道)//占领地图
             ));
-            addToTree(倾巢而出, 曲沿通道,  null, Seq.with(
+            addToTree(倾巢而出, 曲沿通道, null, Seq.with(
                     new Objectives.Research(赤狐),//研究方块或资源
                     new Objectives.SectorComplete(通道分支)//占领地图
+            ));
+            addToTree(暗袭兽, 倾巢而出, null, Seq.with(
+                    new Objectives.Research(赤狐),//研究方块或资源
+                    new Objectives.SectorComplete(倾巢而出)//占领地图
             ));
         });
     }

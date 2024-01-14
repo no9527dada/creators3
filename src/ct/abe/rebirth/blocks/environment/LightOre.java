@@ -6,6 +6,7 @@ import mindustry.type.Item;
 import mindustry.world.Tile;
 import mindustry.world.blocks.environment.OreBlock;
 //没用到本类
+//想做发光的矿物，结果没起作用
 public class LightOre extends OreBlock {
     public LightOre(String name, Item ore) {
         super(name);

@@ -9,11 +9,13 @@ import arc.struct.ObjectMap;
 import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
+import arc.util.Timer;
+import ct.abe.CTUpdater;
 import ct.abe.rebirth.content.Loader;
 import ct.abe.rebirth.ui.dialogs.CT3InfoDialog;
 import ct.abe.rebirth.ui.dialogs.CT3PlanetDialog;
 import ct.abe.rebirth.utils.Wave;
-import ct.abe.rebirth.utils.原版修改;
+import ct.abe.rebirth.utils.原版修改沙盒;
 import ct.ahapter.CreatorsModJS;
 import ct.ahapter.环境植被;
 import ct.type.CTResearchDialog;
@@ -66,7 +68,7 @@ public class CTRebirth extends Mod {
         //由Loader统一初始化（Block/Item/Turret/Unit/TechTree）等数据
         环境植被.load();
         Loader.load();
-        原版修改.load();
+        原版修改沙盒.load();
 
 
         new CreatorsClassification();
@@ -140,7 +142,7 @@ public class CTRebirth extends Mod {
         new Wave();
 
         //檢測更新
-        // Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
+        Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
 
         //选择方块显示图标
         Events.on(EventType.ClientLoadEvent.class, e -> CT3选择方块显示图标());

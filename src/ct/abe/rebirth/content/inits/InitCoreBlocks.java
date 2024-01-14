@@ -1,20 +1,51 @@
 package ct.abe.rebirth.content.inits;
 
 import arc.Core;
+import ct.abe.rebirth.blocks.stroge.CTCoreBlock;
 import mindustry.type.Category;
+import mindustry.world.blocks.storage.CoreBlock;
 import mindustry.world.meta.BuildVisibility;
 
+import static ct.abe.rebirth.content.Blocks.*;
 import static ct.abe.rebirth.content.Items.*;
 import static ct.abe.rebirth.content.Units.*;
 import static mindustry.type.ItemStack.with;
 
-import ct.abe.rebirth.blocks.stroge.CTCoreBlock;
-
-import static ct.abe.rebirth.content.Blocks.*;
-
 public class InitCoreBlocks {
 
     public static void load() {
+        //敌人的隐形核心，作用于刷怪，不可被攻击和摧毁，只能用逻辑清除该方块，达到胜利的目的
+        new CoreBlock("invisibilityCore") {
+            {
+                localizedName = Core.bundle.get("block.invisibilityCore");
+                description = Core.bundle.getOrNull("block.description.invisibilityCore");
+                requirements(Category.effect, BuildVisibility.editorOnly, with(陶, 100));
+                alwaysUnlocked = true;
+                incinerateNonBuildable = true;//不可建造，会在建造UI面板隐藏
+                isFirstTier = false;//核心地板限制
+                //unitType = 核心机0号;
+                health = 20000;
+                itemCapacity = 10000;
+                size = 1;
+                solid = false;//固体
+                targetable = false;//被单位攻击？
+                canOverdrive = false;//超速
+                unitCapModifier = 999999;
+                hasShadow = false;//方块黑影
+                drawTeamOverlay = false;//方块绘制队伍斜杠
+                buildType = Build::new;
+            }
+
+            class Build extends CoreBlock.CoreBuild {
+                @Override
+                public void damage(float damage) {
+                }
+
+                public void drawLight() {
+                }//不发光
+
+            }
+        };
         core0 = new CTCoreBlock("core0") {{
             localizedName = Core.bundle.get("block.core0");
             description = Core.bundle.getOrNull("block.description.core0");

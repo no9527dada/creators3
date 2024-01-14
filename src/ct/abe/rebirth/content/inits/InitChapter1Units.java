@@ -87,7 +87,7 @@ public class InitChapter1Units {
             useEngineElevation = false;
             mineWalls = false;//开采墙壁矿物
             mineFloor = true;//开采地表矿物
-            lightRadius = 30 * 8;
+            lightRadius = 40 * 8;
             lightOpacity = 0.5f;
 
         }};

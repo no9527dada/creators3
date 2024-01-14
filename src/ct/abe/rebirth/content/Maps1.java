@@ -3,18 +3,18 @@ package ct.abe.rebirth.content;
 import mindustry.type.SectorPreset;
 
 public class Maps1 {
-    public static SectorPreset 跌落遗境,异声,神秘少女,洞穴躲藏,洞穴深处,曲沿通道,通道分支,倾巢而出
-            ;
+    public static SectorPreset 跌落遗境, 异声, 神秘少女, 洞穴躲藏, 洞穴深处, 曲沿通道, 通道分支, 倾巢而出, 暗袭兽;
+
     public static void load() {
         跌落遗境 = new SectorPreset("跌落遗境", Planets.Planet1, 0) {{
-            localizedName ="跌落遗境";
-            description="你从昏迷中醒来，发现身体已无无法动弹。曾经叱咤风云的你，只记得触碰上古禁止后被打落至练气境界。但具体是如何遭遇你却是已经记忆不清";
+            localizedName = "跌落遗境";
+            description = "你从昏迷中醒来，发现身体已无无法动弹。曾经叱咤风云的你，只记得触碰上古禁止后被打落至练气境界。但具体是如何遭遇你却是已经记忆不清";
             captureWave = 10;
             difficulty = 0;
-             alwaysUnlocked = true;
-             addStartingItems = true;
-             overrideLaunchDefaults = true;
-             noLighting = true;
+            alwaysUnlocked = true;
+            addStartingItems = true;
+            overrideLaunchDefaults = true;
+            noLighting = true;
         }};
         异声 = new SectorPreset("2异声", Planets.Planet1, 2) {{
             localizedName ="异声";
@@ -65,9 +65,17 @@ public class Maps1 {
             noLighting = true;
         }};
         倾巢而出 = new SectorPreset("8倾巢而出", Planets.Planet1, 8) {{
-            localizedName ="倾巢而出";
-            description="已然接近老巢，这里有大量低阶妖兽盘踞";
+            localizedName = "倾巢而出";
+            description = "已然接近老巢，这里有大量低阶妖兽盘踞";
             captureWave = 52;
+            difficulty = 13;
+            addStartingItems = true;//添加初始资源（地图编辑器）
+            noLighting = true;
+        }};
+        暗袭兽 = new SectorPreset("9暗袭兽", Planets.Planet1, 9) {{
+            localizedName = "暗袭兽";
+            description = "阴暗潮湿的洞穴，黑暗中盘伏者惧光妖兽";
+            // captureWave = 52;
             difficulty = 13;
             addStartingItems = true;//添加初始资源（地图编辑器）
             noLighting = true;
