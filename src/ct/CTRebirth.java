@@ -10,16 +10,20 @@ import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
 import arc.util.Timer;
-import ct.abe.CTUpdater;
-import ct.abe.rebirth.content.Loader;
-import ct.abe.rebirth.ui.dialogs.CT3InfoDialog;
-import ct.abe.rebirth.ui.dialogs.CT3PlanetDialog;
-import ct.abe.rebirth.utils.Wave;
-import ct.abe.rebirth.utils.原版修改沙盒;
-import ct.ahapter.CreatorsModJS;
-import ct.ahapter.环境植被;
-import ct.type.CTResearchDialog;
-import ct.ui.CreatorsClassification;
+import ct.Asystem.CTUpdater;
+
+
+import ct.Asystem.Wave;
+import ct.Asystem.dialogs.CT3InfoDialog;
+import ct.Asystem.dialogs.CT3PlanetDialog;
+import ct.content.CTAttributes;
+import ct.content.Floors;
+import ct.content.NewFx;
+import ct.content.SourceCodeModification_Sandbox;
+import ct.Asystem.CreatorsModJS;
+import ct.Asystem.type.CTResearchDialog;
+import ct.content.chapter1.chapter1;
+import ct.ui.CT3ClassificationUi;
 import mindustry.Vars;
 import mindustry.game.EventType;
 import mindustry.graphics.Layer;
@@ -65,18 +69,21 @@ public class CTRebirth extends Mod {
         // Team.sharded.color.set(0.0F, 153.0F, 255.0F, 64.0F);//黄队伍颜色
         //Team.crux.color.set(79.0F, 181.0F, 103.0F, 255.0F);//红队伍颜色
         //难度修改
-        //由Loader统一初始化（Block/Item/Turret/Unit/TechTree）等数据
-        环境植被.load();
-        Loader.load();
-        原版修改沙盒.load();
+        CTAttributes.load();
+        Floors.load();
+        NewFx.load();
+        chapter1.load();
 
 
-        new CreatorsClassification();
+        SourceCodeModification_Sandbox.load();
+
+
+        new CT3ClassificationUi();
         Scripts scripts = Vars.mods.getScripts();
         Scriptable scope = scripts.scope;
         try {
-            Object obj = Context.javaToJS(new CreatorsClassification(), scope);
-            ScriptableObject.putProperty(scope, "CreatorsClassification", obj);
+            Object obj = Context.javaToJS(new CT3ClassificationUi(), scope);
+            ScriptableObject.putProperty(scope, "CT3ClassificationUi", obj);
         } catch (Exception var5) {
             Vars.ui.showException(var5);
         }
@@ -160,7 +167,7 @@ public class CTRebirth extends Mod {
             Time.runTask(1.0F, research::hide);
         });
 
-        //区块名显示
+        //区块名显示 //有BUG 导致不能用发射台
         CT3PlanetDialog planet2 = new CT3PlanetDialog();
         PlanetDialog planet = Vars.ui.planet;
         planet.shown(() -> {

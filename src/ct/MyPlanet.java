@@ -1,3 +1,4 @@
+/*
 package ct;
 
 import arc.math.Mathf;
@@ -29,3 +30,4 @@ public class MyPlanet extends Planet {
         }
     }
 }
+*/

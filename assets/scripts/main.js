@@ -20,7 +20,7 @@ CreatorsModJS.DawnRun.add(run(() => {
 //  require('UnitBlocks');
 // require('环保生产厂');
 // require('zuantou');
-//  require('104单位工厂');
+  require('104单位工厂');
 // require('测试');
 
 }));
