@@ -16,13 +16,14 @@ import ct.Asystem.CTUpdater;
 import ct.Asystem.Wave;
 import ct.Asystem.dialogs.CT3InfoDialog;
 import ct.Asystem.dialogs.CT3PlanetDialog;
-import ct.content.CTAttributes;
-import ct.content.Floors;
-import ct.content.NewFx;
-import ct.content.SourceCodeModification_Sandbox;
+import ct.content.*;
 import ct.Asystem.CreatorsModJS;
 import ct.Asystem.type.CTResearchDialog;
 import ct.content.chapter1.chapter1;
+import ct.content.chapter2.chapter2;
+import ct.content.chapter3.chapter3;
+import ct.content.chapter4.chapter4;
+import ct.content.chapter5.chapter5;
 import ct.ui.CT3ClassificationUi;
 import mindustry.Vars;
 import mindustry.game.EventType;
@@ -72,8 +73,12 @@ public class CTRebirth extends Mod {
         CTAttributes.load();
         Floors.load();
         NewFx.load();
+        CTR4Unit2.load();//敌对单位。改为通用单位，不限制在章节4了
         chapter1.load();
-
+        chapter2.load();
+        chapter3.load();
+        chapter4.load();
+        chapter5.load();
 
         SourceCodeModification_Sandbox.load();
 
@@ -149,7 +154,7 @@ public class CTRebirth extends Mod {
         new Wave();
 
         //檢測更新
-        Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
+        //  Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
 
         //选择方块显示图标
         Events.on(EventType.ClientLoadEvent.class, e -> CT3选择方块显示图标());

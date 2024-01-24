@@ -50,7 +50,7 @@ public class Planet1 {
             iconColor = Color.valueOf("fff962");
             defaultEnv = Evn2.标志1 | Env.terrestrial;//*这个星球上扇区的环境标志。
             defaultCore = core0;
-            meshLoader = () -> new HexMesh(this, 5);
+            meshLoader = () -> new HexMesh(this, 6);
             bloom = true;
             startSector = 0;
             //星球的初始核心蓝图：

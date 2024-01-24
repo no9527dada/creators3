@@ -21,7 +21,7 @@ import mindustry.world.meta.BuildVisibility;
 
 
 import static ct.Asystem.type.CTBulletTypes.*;
-import static ct.content.chapter4.CTItem.*;
+import static ct.content.chapter4.CT3Item4.*;
 
 import static mindustry.content.Fx.none;
 import static mindustry.type.ItemStack.with;

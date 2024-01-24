@@ -1,6 +1,7 @@
 package ct.content.chapter1;
 
 
+import ct.content.Bullets.Bullets1;
 import ct.content.CT3CoreBlocks;
 import ct.content.Item0;
 
@@ -11,8 +12,8 @@ public class chapter1 {
         Item0.load();
         CoreUnit1.load();
         UnitNPC.load();
-        Bullets.load();
-        Turrets.load();
+        Bullets1.load();
+        Turrets1.load();
         Blocks1.load();
         Wall1.load();
 

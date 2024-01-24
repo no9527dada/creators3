@@ -90,6 +90,9 @@ public class Item1 {
         精焰 = new Item("精焰", Color.valueOf("ff6000")) {{
             localizedName = Core.bundle.get("items.jingyan");
             description = Core.bundle.getOrNull("items.description.jingyan");
+            frames = 2;// >0时会有有动画
+            transitionFrames = 1;//每帧之间生成的过渡帧的数量
+            frameTime = 25f;//贴图变换之间的时间，默认5
         }};
         冰橡子 = new Item("冰橡子", Color.valueOf("f1b7e3")) {{
             localizedName = Core.bundle.get("items.bingxiangzi");
@@ -123,7 +126,7 @@ public class Item1 {
         合婴丹 = new Item("合婴丹", Color.valueOf("b19207")) {{
             localizedName = Core.bundle.get("items.heyingdan");
             description = Core.bundle.getOrNull("items.description.heyingdan");
-            radioactivity = 3f;
+            radioactivity = 5f;
             frames = 5;// >0时会有有动画
             transitionFrames = 1;//每帧之间生成的过渡帧的数量
             frameTime = 10f;//贴图变换之间的时间，默认5

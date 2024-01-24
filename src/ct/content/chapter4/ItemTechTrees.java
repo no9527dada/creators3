@@ -1,3 +1,4 @@
+/*
 package ct.content.chapter4;
 
 //import mindustry.content.Planets;
@@ -10,8 +11,8 @@ import mindustry.type.ItemStack;
 
 import static ct.Asystem.type.CTTechTree.addToTree;
 
-import static ct.content.chapter4.CTBlocks.*;
-import static ct.content.chapter4.CTItem.*;
+import static ct.content.chapter4.CT3Blocks4.*;
+import static ct.content.chapter4.CT3Item4.*;
 import static ct.content.chapter4.ItemsSMChuaGong.资源炼化器1;
 import static ct.content.chapter4.Planet4.coreT1;
 
@@ -21,16 +22,19 @@ public class ItemTechTrees {
     public static float 倍率 = 1;
 
     public static void load() {
-        Planet4.Planet4.techTree = TechTree.nodeRoot("重生-资源", coreT1, true, () -> {
+        Planet4.Planet4.techTree = TechTree.nodeRoot("重生-资源5", coreT1, true, () -> {
             //原版
+        */
 /*            node(黑油精炼台, () -> {
                 node(coreT1, () -> {
 
                 });
-            });*/
+            });*//*
+
             //
             //自创科技树写法
-           /* addToTree(黑油精炼台, coreT1, ItemStack.with(
+           */
+/* addToTree(黑油精炼台, coreT1, ItemStack.with(
                             Items.silicon, 200 * 30,
                             Items.thorium, 320 * 30,
                             Items.phaseFabric, 330 * 30,
@@ -40,22 +44,23 @@ public class ItemTechTrees {
                             new Objectives.Research(dimensionT5Reconstructor),//研究
                             new Objectives.SectorComplete(darkGuard),//占领
 
-                    ));*/
+                    ));*//*
+
 
             addToTree(棺炆魂矩, coreT1, ItemStack.with(
-                    CTItem.灵魂丝, 30, CTItem.相织物, 30
+                    CT3Item4.灵魂丝, 30, CT3Item4.相织物, 30
             ));
             addToTree(赤水魂矩, coreT1, ItemStack.with(
-                    棺炆魂矩, 30, CTItem.珊绒, 50, CTItem.气光散, 50
+                    棺炆魂矩, 30, CT3Item4.珊绒, 50, CT3Item4.气光散, 50
             ));
             addToTree(止枢魂矩, coreT1, ItemStack.with(
-                    赤水魂矩, 30, CTItem.沉珠, 80, CTItem.灵晶, 80
+                    赤水魂矩, 30, CT3Item4.沉珠, 80, CT3Item4.灵晶, 80
             ));
             addToTree(绝情魂矩, coreT1, ItemStack.with(
-                    止枢魂矩, 30, CTItem.灵魂核心, 120, CTItem.灵魂网束器, 120
+                    止枢魂矩, 30, CT3Item4.灵魂核心, 120, CT3Item4.灵魂网束器, 120
             ));
             addToTree(混仑魂矩, coreT1, ItemStack.with(
-                    绝情魂矩, 30, CTItem.夜灵珠, 170, CTItem.夜灵, 170
+                    绝情魂矩, 30, CT3Item4.夜灵珠, 170, CT3Item4.夜灵, 170
             ));
             addToTree(灵屈魂矩, coreT1, ItemStack.with(
                     暗物质, 150, 混仑魂矩, 300, 绝情魂矩, 500, 止枢魂矩, 750, 赤水魂矩, 1100, 棺炆魂矩, 1700
@@ -239,9 +244,6 @@ public class ItemTechTrees {
         });
     }
 }
-/*
-*
-        null ,  Seq.with(
-                    new Objectives.Research(锁定)//研究
-            ));
-            * */
+*/
+
+

@@ -3,9 +3,12 @@ package ct.content.chapter5;
 import arc.Core;
 import arc.graphics.Color;
 import mindustry.content.Blocks;
+import mindustry.content.Items;
 import mindustry.content.Planets;
 import mindustry.game.Team;
+import mindustry.graphics.Pal;
 import mindustry.graphics.g3d.HexMesh;
+import mindustry.maps.planet.SerpuloPlanetGenerator;
 import mindustry.maps.planet.TantrosPlanetGenerator;
 import mindustry.type.Planet;
 import mindustry.type.Sector;
@@ -22,7 +25,7 @@ public class Planet5 {
 
         Planet5 = new Planet("Planet5", Planets.sun, 1f, 3) {{
             localizedName = Core.bundle.format("Planet5");
-            generator = new TantrosPlanetGenerator() {
+            generator = new SerpuloPlanetGenerator() {
                 public boolean allowLanding(Sector sector) {
                     return false;
                 }//关闭数字区块
@@ -34,8 +37,11 @@ public class Planet5 {
                 {
                 }
             };
-            iconColor = Color.valueOf("fff962");
-            meshLoader = () -> new HexMesh(this, 5);
+            iconColor = Color.valueOf("ee7433");
+            atmosphereColor = Color.valueOf("ee7433");
+            landCloudColor = Pal.spore.cpy().a(0.5f);
+            meshLoader = () -> new HexMesh(this, 7);
+            hiddenItems.addAll(Items.erekirItems).removeAll(Items.serpuloItems);
             bloom = true;
             startSector = 100;
             alwaysUnlocked = true;
@@ -62,7 +68,10 @@ public class Planet5 {
                 r.staticFog = true;
                 r.lighting = false;
 
-
+                r.teams.get(Team.sharded).unitDamageMultiplier = 0.5f;//单位伤害减半
+                r.waveTeam = Team.crux;
+                r.placeRangeCheck = false;
+                r.showSpawns = false;
             };
 
             unlockedOnLand.add(Blocks.coreShard);

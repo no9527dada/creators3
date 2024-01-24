@@ -27,12 +27,12 @@ public class ItemsSMCjingLian {
             RecipeShowIS = 6;
 // LiquidStack.with(叹酸, 8),
             addRecipe(
-                    new CreatorsRecipe.InputContents(LiquidStack.with(CTItem.黑油, 4), 150f / 60f),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.珊绒, 1), LiquidStack.with(CTItem.恐油, 2)), 4f * 60f
+                    new CreatorsRecipe.InputContents(LiquidStack.with(CT3Item4.黑油, 4), 150f / 60f),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.珊绒, 1), LiquidStack.with(CT3Item4.恐油, 2)), 4f * 60f
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.珊绒, 2), LiquidStack.with(CTItem.恐油, 1), 100f / 60f),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.珊绒, 3, CTItem.粉烟, 1)), 4f * 60f
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.珊绒, 2), LiquidStack.with(CT3Item4.恐油, 1), 100f / 60f),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.珊绒, 3, CT3Item4.粉烟, 1)), 4f * 60f
             );
 
         }};

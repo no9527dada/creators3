@@ -51,109 +51,109 @@ public class ItemsSMC {
             ambientSound = Sounds.electricHum;
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 1), 30f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.冥丝, 1)), 1f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 1), 30f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.冥丝, 1)), 1f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥织, 2, CTItem.魂翠, 1), 60f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.相织物, 2)), 1f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥织, 2, CT3Item4.魂翠, 1), 60f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.相织物, 2)), 1f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 3), 50f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵境, 2)), 2f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 3), 50f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵境, 2)), 2f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 2, CTItem.魂翠, 1), 40f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂丝, 2)), 1f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 2, CT3Item4.魂翠, 1), 40f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂丝, 2)), 1f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冤藤, 25), LiquidStack.with(CTItem.灵液, 35), 60f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.硅晶体, 1)), 6f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冤藤, 25), LiquidStack.with(CT3Item4.灵液4, 35), 60f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.硅晶体, 1)), 6f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 3, CTItem.硅晶体, 1), 60f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵晶, 1)), 4f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 3, CT3Item4.硅晶体, 1), 60f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵晶, 1)), 4f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.相织物, 4, CTItem.灵境, 2), 65f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂力激发块, 1)), 2.5f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.相织物, 4, CT3Item4.灵境, 2), 65f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂力激发块, 1)), 2.5f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 2, CTItem.珊绒, 10), 25f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.一级燃魂集, 2)), 6f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 2, CT3Item4.珊绒, 10), 25f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.一级燃魂集, 2)), 6f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.翠灵晶, 1, CTItem.暗珊绒, 8, CTItem.缜相织, 1), 90f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.二级燃魂集, 2)), 12f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.翠灵晶, 1, CT3Item4.暗珊绒, 8, CT3Item4.缜相织, 1), 90f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.二级燃魂集, 2)), 12f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.暗物质, 12, CTItem.灵魂束缚容器, 1, CTItem.翠灵晶, 3, CTItem.珊绒, 10), 220f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.三级燃魂集, 2)), 24f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.暗物质, 12, CT3Item4.灵魂束缚容器, 1, CT3Item4.翠灵晶, 3, CT3Item4.珊绒, 10), 220f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.三级燃魂集, 2)), 24f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥丝, 2, CTItem.冥翠, 1, CTItem.相织物, 1), 45f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微相织, 2)), 2f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥丝, 2, CT3Item4.冥翠, 1, CT3Item4.相织物, 1), 45f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微相织, 2)), 2f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微相织, 2, CTItem.相织物, 2), 57f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬相织, 2)), 2f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微相织, 2, CT3Item4.相织物, 2), 57f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬相织, 2)), 2f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.冥织, 3, CTItem.粉烟, 1), 85f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.缜相织, 2)), 3f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.冥织, 3, CT3Item4.粉烟, 1), 85f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.缜相织, 2)), 3f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 2, CTItem.灵珠, 2), LiquidStack.with(CTItem.灵液, 5), 65f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.怨灵集束, 2)), 5f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 2, CT3Item4.灵珠, 2), LiquidStack.with(CT3Item4.灵液4, 5), 65f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.怨灵集束, 2)), 5f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵晶, 1, CTItem.气光散, 2, CTItem.珊绒, 10), 80f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微格晶, 1)), 4f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵晶, 1, CT3Item4.气光散, 2, CT3Item4.珊绒, 10), 80f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微格晶, 1)), 4f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2), 120f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.赤焰膏精, 1)), 2f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2), 120f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.赤焰膏精, 1)), 2f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2, CTItem.魂翠, 2), 120f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂集束, 1)), 2f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2, CT3Item4.魂翠, 2), 120f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂集束, 1)), 2f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵魂丝, 3, CTItem.灵魂集束, 2), 90f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂核心, 1)), 4f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵魂丝, 3, CT3Item4.灵魂集束, 2), 90f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂核心, 1)), 4f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微格晶, 1, CTItem.怨灵集束, 2, CTItem.灵魂集束, 2), 140f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂转换因子, 1)), 12f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微格晶, 1, CT3Item4.怨灵集束, 2, CT3Item4.灵魂集束, 2), 140f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂转换因子, 1)), 12f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 2, CTItem.赤焰膏精, 2, CTItem.网束器, 1), 80f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂网束器, 1)), 8f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 2, CT3Item4.赤焰膏精, 2, CT3Item4.网束器, 1), 80f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂网束器, 1)), 8f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.沉珠, 4, CTItem.夜灵核心, 1), LiquidStack.with(CTItem.叹酸, 4), 160f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.夜灵珠, 1)), 6f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.沉珠, 4, CT3Item4.夜灵核心, 1), LiquidStack.with(CT3Item4.叹酸, 4), 160f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.夜灵珠, 1)), 6f * CT3Blocks4.T0time
             );
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.魂翠, 2, CTItem.气光散, 2), 90f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.魂翠, 2, CT3Item4.气光散, 2), 90f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.魔能晶, 8, CTItem.魂翠, 3), 120f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.魔能晶, 8, CT3Item4.魂翠, 3), 120f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬光束, 1, CTItem.灵魂核心, 2), 210f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂束缚容器, 1)), 20f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬光束, 1, CT3Item4.灵魂核心, 2), 210f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂束缚容器, 1)), 20f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 4, CTItem.翠灵晶, 1, CTItem.赤焰膏块, 1), 180f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.混沌晶体, 1)), 6f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 4, CT3Item4.翠灵晶, 1, CT3Item4.赤焰膏块, 1), 180f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.混沌晶体, 1)), 6f * CT3Blocks4.T0time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨石块, 8, CTItem.冥翠块, 3), 80f * CTBlocks.p0t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂冲器, 1)), 15f * CTBlocks.T0time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨石块, 8, CT3Item4.冥翠块, 3), 80f * CT3Blocks4.p0t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂冲器, 1)), 15f * CT3Blocks4.T0time
             );
 
 
@@ -190,109 +190,109 @@ public class ItemsSMC {
             ambientSound = Sounds.electricHum;
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 1), 30f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.冥丝, 1)), 1f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 1), 30f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.冥丝, 1)), 1f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥织, 2, CTItem.魂翠, 1), 60f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.相织物, 2)), 1f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥织, 2, CT3Item4.魂翠, 1), 60f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.相织物, 2)), 1f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 3), 50f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵境, 2)), 2f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 3), 50f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵境, 2)), 2f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 2, CTItem.魂翠, 1), 40f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂丝, 2)), 1f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 2, CT3Item4.魂翠, 1), 40f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂丝, 2)), 1f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冤藤, 25), LiquidStack.with(CTItem.灵液, 35), 60f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.硅晶体, 1)), 6f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冤藤, 25), LiquidStack.with(CT3Item4.灵液4, 35), 60f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.硅晶体, 1)), 6f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 3, CTItem.硅晶体, 1), 60f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵晶, 1)), 4f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 3, CT3Item4.硅晶体, 1), 60f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵晶, 1)), 4f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.相织物, 4, CTItem.灵境, 2), 65f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂力激发块, 1)), 2.5f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.相织物, 4, CT3Item4.灵境, 2), 65f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂力激发块, 1)), 2.5f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 2, CTItem.珊绒, 10), 25f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.一级燃魂集, 2)), 6f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 2, CT3Item4.珊绒, 10), 25f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.一级燃魂集, 2)), 6f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.翠灵晶, 1, CTItem.暗珊绒, 8, CTItem.缜相织, 1), 90f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.二级燃魂集, 2)), 12f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.翠灵晶, 1, CT3Item4.暗珊绒, 8, CT3Item4.缜相织, 1), 90f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.二级燃魂集, 2)), 12f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.暗物质, 12, CTItem.灵魂束缚容器, 1, CTItem.翠灵晶, 3, CTItem.珊绒, 10), 220f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.三级燃魂集, 2)), 24f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.暗物质, 12, CT3Item4.灵魂束缚容器, 1, CT3Item4.翠灵晶, 3, CT3Item4.珊绒, 10), 220f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.三级燃魂集, 2)), 24f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥丝, 2, CTItem.冥翠, 1, CTItem.相织物, 1), 45f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微相织, 2)), 2f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥丝, 2, CT3Item4.冥翠, 1, CT3Item4.相织物, 1), 45f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微相织, 2)), 2f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微相织, 2, CTItem.相织物, 2), 57f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬相织, 2)), 2f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微相织, 2, CT3Item4.相织物, 2), 57f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬相织, 2)), 2f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.冥织, 3, CTItem.粉烟, 1), 85f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.缜相织, 2)), 3f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.冥织, 3, CT3Item4.粉烟, 1), 85f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.缜相织, 2)), 3f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 2, CTItem.灵珠, 2), LiquidStack.with(CTItem.灵液, 5), 65f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.怨灵集束, 2)), 5f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 2, CT3Item4.灵珠, 2), LiquidStack.with(CT3Item4.灵液4, 5), 65f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.怨灵集束, 2)), 5f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵晶, 1, CTItem.气光散, 2, CTItem.珊绒, 10), 80f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微格晶, 1)), 4f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵晶, 1, CT3Item4.气光散, 2, CT3Item4.珊绒, 10), 80f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微格晶, 1)), 4f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2), 120f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.赤焰膏精, 1)), 2f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2), 120f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.赤焰膏精, 1)), 2f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2, CTItem.魂翠, 2), 120f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂集束, 1)), 2f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2, CT3Item4.魂翠, 2), 120f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂集束, 1)), 2f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵魂丝, 3, CTItem.灵魂集束, 2), 90f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂核心, 1)), 4f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵魂丝, 3, CT3Item4.灵魂集束, 2), 90f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂核心, 1)), 4f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微格晶, 1, CTItem.怨灵集束, 2, CTItem.灵魂集束, 2), 140f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂转换因子, 1)), 12f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微格晶, 1, CT3Item4.怨灵集束, 2, CT3Item4.灵魂集束, 2), 140f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂转换因子, 1)), 12f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 2, CTItem.赤焰膏精, 2, CTItem.网束器, 1), 80f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂网束器, 1)), 8f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 2, CT3Item4.赤焰膏精, 2, CT3Item4.网束器, 1), 80f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂网束器, 1)), 8f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.沉珠, 4, CTItem.夜灵核心, 1), LiquidStack.with(CTItem.叹酸, 4), 160f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.夜灵珠, 1)), 6f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.沉珠, 4, CT3Item4.夜灵核心, 1), LiquidStack.with(CT3Item4.叹酸, 4), 160f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.夜灵珠, 1)), 6f * CT3Blocks4.T1time
             );
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.魂翠, 2, CTItem.气光散, 2), 90f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.魂翠, 2, CT3Item4.气光散, 2), 90f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.魔能晶, 8, CTItem.魂翠, 3), 120f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.魔能晶, 8, CT3Item4.魂翠, 3), 120f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬光束, 1, CTItem.灵魂核心, 2), 210f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂束缚容器, 1)), 20f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬光束, 1, CT3Item4.灵魂核心, 2), 210f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂束缚容器, 1)), 20f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 4, CTItem.翠灵晶, 1, CTItem.赤焰膏块, 1), 180f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.混沌晶体, 1)), 6f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 4, CT3Item4.翠灵晶, 1, CT3Item4.赤焰膏块, 1), 180f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.混沌晶体, 1)), 6f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨石块, 8, CTItem.冥翠块, 3), 80f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂冲器, 1)), 15f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨石块, 8, CT3Item4.冥翠块, 3), 80f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂冲器, 1)), 15f * CT3Blocks4.T1time
             );
 
 
@@ -329,109 +329,109 @@ public class ItemsSMC {
             ambientSound = Sounds.electricHum;
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 1), 30f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.冥丝, 1)), 1f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 1), 30f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.冥丝, 1)), 1f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥织, 2, CTItem.魂翠, 1), 60f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.相织物, 2)), 1f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥织, 2, CT3Item4.魂翠, 1), 60f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.相织物, 2)), 1f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 3), 50f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵境, 2)), 2f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 3), 50f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵境, 2)), 2f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 2, CTItem.魂翠, 1), 40f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂丝, 2)), 1f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 2, CT3Item4.魂翠, 1), 40f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂丝, 2)), 1f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冤藤, 25), LiquidStack.with(CTItem.灵液, 35), 60f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.硅晶体, 1)), 6f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冤藤, 25), LiquidStack.with(CT3Item4.灵液4, 35), 60f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.硅晶体, 1)), 6f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 3, CTItem.硅晶体, 1), 60f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵晶, 1)), 4f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 3, CT3Item4.硅晶体, 1), 60f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵晶, 1)), 4f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.相织物, 4, CTItem.灵境, 2), 65f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂力激发块, 1)), 2.5f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.相织物, 4, CT3Item4.灵境, 2), 65f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂力激发块, 1)), 2.5f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 2, CTItem.珊绒, 10), 25f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.一级燃魂集, 2)), 6f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 2, CT3Item4.珊绒, 10), 25f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.一级燃魂集, 2)), 6f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.翠灵晶, 1, CTItem.暗珊绒, 8, CTItem.缜相织, 1), 90f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.二级燃魂集, 2)), 12f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.翠灵晶, 1, CT3Item4.暗珊绒, 8, CT3Item4.缜相织, 1), 90f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.二级燃魂集, 2)), 12f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.暗物质, 12, CTItem.灵魂束缚容器, 1, CTItem.翠灵晶, 3, CTItem.珊绒, 10), 220f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.三级燃魂集, 2)), 24f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.暗物质, 12, CT3Item4.灵魂束缚容器, 1, CT3Item4.翠灵晶, 3, CT3Item4.珊绒, 10), 220f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.三级燃魂集, 2)), 24f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥丝, 2, CTItem.冥翠, 1, CTItem.相织物, 1), 45f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微相织, 2)), 2f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥丝, 2, CT3Item4.冥翠, 1, CT3Item4.相织物, 1), 45f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微相织, 2)), 2f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微相织, 2, CTItem.相织物, 2), 57f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬相织, 2)), 2f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微相织, 2, CT3Item4.相织物, 2), 57f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬相织, 2)), 2f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.冥织, 3, CTItem.粉烟, 1), 85f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.缜相织, 2)), 3f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.冥织, 3, CT3Item4.粉烟, 1), 85f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.缜相织, 2)), 3f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 2, CTItem.灵珠, 2), LiquidStack.with(CTItem.灵液, 5), 65f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.怨灵集束, 2)), 5f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 2, CT3Item4.灵珠, 2), LiquidStack.with(CT3Item4.灵液4, 5), 65f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.怨灵集束, 2)), 5f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵晶, 1, CTItem.气光散, 2, CTItem.珊绒, 10), 80f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微格晶, 1)), 4f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵晶, 1, CT3Item4.气光散, 2, CT3Item4.珊绒, 10), 80f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微格晶, 1)), 4f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2), 120f * CTBlocks.p1t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.赤焰膏精, 1)), 2f * CTBlocks.T1time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2), 120f * CT3Blocks4.p1t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.赤焰膏精, 1)), 2f * CT3Blocks4.T1time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2, CTItem.魂翠, 2), 120f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂集束, 1)), 2f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2, CT3Item4.魂翠, 2), 120f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂集束, 1)), 2f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵魂丝, 3, CTItem.灵魂集束, 2), 90f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂核心, 1)), 4f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵魂丝, 3, CT3Item4.灵魂集束, 2), 90f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂核心, 1)), 4f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微格晶, 1, CTItem.怨灵集束, 2, CTItem.灵魂集束, 2), 140f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂转换因子, 1)), 12f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微格晶, 1, CT3Item4.怨灵集束, 2, CT3Item4.灵魂集束, 2), 140f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂转换因子, 1)), 12f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 2, CTItem.赤焰膏精, 2, CTItem.网束器, 1), 80f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂网束器, 1)), 8f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 2, CT3Item4.赤焰膏精, 2, CT3Item4.网束器, 1), 80f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂网束器, 1)), 8f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.沉珠, 4, CTItem.夜灵核心, 1), LiquidStack.with(CTItem.叹酸, 4), 160f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.夜灵珠, 1)), 6f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.沉珠, 4, CT3Item4.夜灵核心, 1), LiquidStack.with(CT3Item4.叹酸, 4), 160f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.夜灵珠, 1)), 6f * CT3Blocks4.T2time
             );
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.魂翠, 2, CTItem.气光散, 2), 90f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.魂翠, 2, CT3Item4.气光散, 2), 90f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.魔能晶, 8, CTItem.魂翠, 3), 120f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.魔能晶, 8, CT3Item4.魂翠, 3), 120f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬光束, 1, CTItem.灵魂核心, 2), 210f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂束缚容器, 1)), 20f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬光束, 1, CT3Item4.灵魂核心, 2), 210f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂束缚容器, 1)), 20f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 4, CTItem.翠灵晶, 1, CTItem.赤焰膏块, 1), 180f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.混沌晶体, 1)), 6f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 4, CT3Item4.翠灵晶, 1, CT3Item4.赤焰膏块, 1), 180f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.混沌晶体, 1)), 6f * CT3Blocks4.T2time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨石块, 8, CTItem.冥翠块, 3), 80f * CTBlocks.p2t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂冲器, 1)), 15f * CTBlocks.T2time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨石块, 8, CT3Item4.冥翠块, 3), 80f * CT3Blocks4.p2t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂冲器, 1)), 15f * CT3Blocks4.T2time
             );
 
 
@@ -468,109 +468,109 @@ public class ItemsSMC {
             ambientSound = Sounds.electricHum;
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 1), 30f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.冥丝, 1)), 1f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 1), 30f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.冥丝, 1)), 1f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥织, 2, CTItem.魂翠, 1), 60f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.相织物, 2)), 1f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥织, 2, CT3Item4.魂翠, 1), 60f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.相织物, 2)), 1f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 3), 50f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵境, 2)), 2f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 3), 50f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵境, 2)), 2f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥翠, 2, CTItem.魂翠, 1), 40f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂丝, 2)), 1f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥翠, 2, CT3Item4.魂翠, 1), 40f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂丝, 2)), 1f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冤藤, 25), LiquidStack.with(CTItem.灵液, 35), 60f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.硅晶体, 1)), 6f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冤藤, 25), LiquidStack.with(CT3Item4.灵液4, 35), 60f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.硅晶体, 1)), 6f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 3, CTItem.硅晶体, 1), 60f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵晶, 1)), 4f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 3, CT3Item4.硅晶体, 1), 60f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵晶, 1)), 4f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.相织物, 4, CTItem.灵境, 2), 65f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂力激发块, 1)), 2.5f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.相织物, 4, CT3Item4.灵境, 2), 65f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂力激发块, 1)), 2.5f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵珠, 2, CTItem.珊绒, 10), 25f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.一级燃魂集, 2)), 6f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵珠, 2, CT3Item4.珊绒, 10), 25f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.一级燃魂集, 2)), 6f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.翠灵晶, 1, CTItem.暗珊绒, 8, CTItem.缜相织, 1), 90f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.二级燃魂集, 2)), 12f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.翠灵晶, 1, CT3Item4.暗珊绒, 8, CT3Item4.缜相织, 1), 90f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.二级燃魂集, 2)), 12f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.暗物质, 12, CTItem.灵魂束缚容器, 1, CTItem.翠灵晶, 3, CTItem.珊绒, 10), 220f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.三级燃魂集, 2)), 24f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.暗物质, 12, CT3Item4.灵魂束缚容器, 1, CT3Item4.翠灵晶, 3, CT3Item4.珊绒, 10), 220f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.三级燃魂集, 2)), 24f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.冥丝, 2, CTItem.冥翠, 1, CTItem.相织物, 1), 45f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微相织, 2)), 2f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.冥丝, 2, CT3Item4.冥翠, 1, CT3Item4.相织物, 1), 45f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微相织, 2)), 2f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微相织, 2, CTItem.相织物, 2), 57f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬相织, 2)), 2f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微相织, 2, CT3Item4.相织物, 2), 57f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬相织, 2)), 2f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.冥织, 3, CTItem.粉烟, 1), 85f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.缜相织, 2)), 3f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.冥织, 3, CT3Item4.粉烟, 1), 85f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.缜相织, 2)), 3f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨气集束, 2, CTItem.灵珠, 2), LiquidStack.with(CTItem.灵液, 5), 65f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.怨灵集束, 2)), 5f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨气集束, 2, CT3Item4.灵珠, 2), LiquidStack.with(CT3Item4.灵液4, 5), 65f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.怨灵集束, 2)), 5f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵晶, 1, CTItem.气光散, 2, CTItem.珊绒, 10), 80f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.微格晶, 1)), 4f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵晶, 1, CT3Item4.气光散, 2, CT3Item4.珊绒, 10), 80f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.微格晶, 1)), 4f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2), 120f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.赤焰膏精, 1)), 2f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2), 120f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.赤焰膏精, 1)), 2f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.赤焰膏块, 2, CTItem.魂翠, 2), 120f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂集束, 1)), 2f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.赤焰膏块, 2, CT3Item4.魂翠, 2), 120f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂集束, 1)), 2f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.灵魂丝, 3, CTItem.灵魂集束, 2), 90f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂核心, 1)), 4f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.灵魂丝, 3, CT3Item4.灵魂集束, 2), 90f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂核心, 1)), 4f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.微格晶, 1, CTItem.怨灵集束, 2, CTItem.灵魂集束, 2), 140f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂转换因子, 1)), 12f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.微格晶, 1, CT3Item4.怨灵集束, 2, CT3Item4.灵魂集束, 2), 140f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂转换因子, 1)), 12f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 2, CTItem.赤焰膏精, 2, CTItem.网束器, 1), 80f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂网束器, 1)), 8f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 2, CT3Item4.赤焰膏精, 2, CT3Item4.网束器, 1), 80f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂网束器, 1)), 8f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.沉珠, 4, CTItem.夜灵核心, 1), LiquidStack.with(CTItem.叹酸, 4), 160f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.夜灵珠, 1)), 6f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.沉珠, 4, CT3Item4.夜灵核心, 1), LiquidStack.with(CT3Item4.叹酸, 4), 160f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.夜灵珠, 1)), 6f * CT3Blocks4.T3time
             );
 
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬相织, 2, CTItem.魂翠, 2, CTItem.气光散, 2), 90f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬相织, 2, CT3Item4.魂翠, 2, CT3Item4.气光散, 2), 90f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.魔能晶, 8, CTItem.魂翠, 3), 120f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.衬光束, 1)), 6f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.魔能晶, 8, CT3Item4.魂翠, 3), 120f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.衬光束, 1)), 6f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.衬光束, 1, CTItem.灵魂核心, 2), 210f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.灵魂束缚容器, 1)), 20f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.衬光束, 1, CT3Item4.灵魂核心, 2), 210f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.灵魂束缚容器, 1)), 20f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.气丝节束, 4, CTItem.翠灵晶, 1, CTItem.赤焰膏块, 1), 180f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.混沌晶体, 1)), 6f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.气丝节束, 4, CT3Item4.翠灵晶, 1, CT3Item4.赤焰膏块, 1), 180f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.混沌晶体, 1)), 6f * CT3Blocks4.T3time
             );
             addRecipe(
-                    new CreatorsRecipe.InputContents(ItemStack.with(CTItem.怨石块, 8, CTItem.冥翠块, 3), 80f * CTBlocks.p3t),
-                    new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.魂冲器, 1)), 15f * CTBlocks.T3time
+                    new CreatorsRecipe.InputContents(ItemStack.with(CT3Item4.怨石块, 8, CT3Item4.冥翠块, 3), 80f * CT3Blocks4.p3t),
+                    new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.魂冲器, 1)), 15f * CT3Blocks4.T3time
             );
 
 
@@ -588,15 +588,15 @@ public class ItemsSMC {
 
                 addRecipe(
                         new CreatorsRecipe.InputContents(ItemStack.with(), 120 / 60f),
-                        new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.珊绒, 3)), 1f * CTBlocks.T1time
+                        new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.珊绒, 3)), 1f * CT3Blocks4.T1time
                 );
                 addRecipe(
                         new CreatorsRecipe.InputContents(ItemStack.with(), 180 / 60f),
-                        new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.烟冰, 2)), 1.5f * CTBlocks.T1time
+                        new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.烟冰, 2)), 1.5f * CT3Blocks4.T1time
                 );
                 addRecipe(
                         new CreatorsRecipe.InputContents(ItemStack.with(), 320 / 60f),
-                        new CreatorsRecipe.OutputContents(ItemStack.with(CTItem.暗珊绒, 2)), 60f * CTBlocks.T1time
+                        new CreatorsRecipe.OutputContents(ItemStack.with(CT3Item4.暗珊绒, 2)), 60f * CT3Blocks4.T1time
                 );
              }};
 

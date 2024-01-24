@@ -14,7 +14,7 @@ import static ct.content.chapter1.Blocks1.*;
 import static ct.content.chapter1.Drill1.*;
 import static ct.content.chapter1.Item1.*;
 import static ct.content.chapter1.Maps1.*;
-import static ct.content.chapter1.Turrets.*;
+import static ct.content.chapter1.Turrets1.*;
 import static ct.content.chapter1.Wall1.*;
 import static ct.content.chapter1.WuLiu1.*;
 
@@ -156,23 +156,26 @@ public class TechTree1 {
                     Seq.with(new Objectives.SectorComplete(神秘少女))//占领地图)
             );
             addToTree(墨雪, 月牙, null,
-                    Seq.with( new Objectives.SectorComplete(洞穴躲藏))//占领地图)
+                    Seq.with(new Objectives.SectorComplete(洞穴躲藏))//占领地图)
             );
             addToTree(刺镰, 闪电链, null,
-                    Seq.with( new Objectives.SectorComplete(洞穴深处))//占领地图)
+                    Seq.with(new Objectives.SectorComplete(洞穴深处))//占领地图)
             );
             addToTree(赤狐, 墨雪, null,
-                    Seq.with( new Objectives.SectorComplete(通道分支))//占领地图)
+                    Seq.with(new Objectives.SectorComplete(通道分支))//占领地图)
+            );
+            addToTree(宏裂, 刺镰, null,
+                    Seq.with(new Objectives.SectorComplete(暗袭兽))//占领地图)
             );
             /**************/
             addToTree(跌落遗境, core0);
-            addToTree(异声, 跌落遗境,  null, Seq.with(
+            addToTree(异声, 跌落遗境, null, Seq.with(
                     new Objectives.SectorComplete(跌落遗境)//占领地图
             ));
-            addToTree(神秘少女, 异声,  null, Seq.with(
+            addToTree(神秘少女, 异声, null, Seq.with(
                     new Objectives.SectorComplete(异声)//占领地图
             ));
-            addToTree(洞穴躲藏, 神秘少女,  null, Seq.with(
+            addToTree(洞穴躲藏, 神秘少女, null, Seq.with(
                     new Objectives.SectorComplete(神秘少女)//占领地图
             ));
             addToTree(洞穴深处, 洞穴躲藏,  null, Seq.with(

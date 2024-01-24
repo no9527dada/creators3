@@ -1,7 +1,6 @@
 package ct.content.chapter5;
 
 
-import ct.Asystem.type.CTTechTree;
 import mindustry.content.Items;
 import mindustry.entities.bullet.MassDriverBolt;
 import mindustry.type.Category;
@@ -16,7 +15,7 @@ import mindustry.world.meta.BlockGroup;
 import mindustry.world.meta.Env;
 
 import static ct.Asystem.type.CTTechTree.addToTree;
-import static ct.content.chapter5.资源.*;
+import static ct.content.chapter5.资源5.*;
 import static mindustry.content.Blocks.*;
 import static mindustry.content.Items.*;
 import static mindustry.type.Category.*;
@@ -26,8 +25,8 @@ import static mindustry.type.ItemStack.with;
 //
 public class 物流5 {
     public static Block
-            钴制导管, 硬速导管, 钴导管桥, 钍导管桥, 钍传送带桥, 动能卸货器, 钴传送带桥, 铝板连接器, 大型储液罐, 数据驱动器, 驱动器, 质量驱逐器, 大型仓库, 超大型仓库,
-            质量转换终端, 战地仓库, 装甲啸动传送带, 铝板传送带, 啸动传送带, 装甲铝板传送带, 钴传送带, 装甲钴传送带, 钻石传送带,
+            钴制导管, 硬速导管, 钴导管桥, 钍导管桥, 钍传送带桥, 动能卸货器, 钴传送带桥, 镍板连接器, 大型储液罐, 数据驱动器, 驱动器, 质量驱逐器, 大型仓库, 超大型仓库,
+            质量转换终端, 战地仓库, 装甲啸动传送带, 镍板传送带, 啸动传送带, 装甲镍板传送带, 钴传送带, 装甲钴传送带, 钻石传送带,
             物流仓储;
 
     public static void load() {
@@ -60,7 +59,7 @@ public class 物流5 {
                     钴, 450,
                     石英, 750,
                     金, 250,
-                    铝板, 100
+                    镍板, 100
             ));
             health = 1500;
             itemCapacity = 15000;
@@ -79,7 +78,7 @@ public class 物流5 {
                     thorium, 800,
                     铁, 500,
                     钻石, 300,
-                    铝板, 300
+                    镍板, 300
             ));
             health = 3000;
             itemCapacity = 50000;
@@ -88,10 +87,10 @@ public class 物流5 {
         }};
         addToTree(战地仓库, 超大型仓库);
 
-        铝板连接器 = new Junction("铝板连接器") {{
-            localizedName = "铝板连接器";
+        镍板连接器 = new Junction("镍板连接器") {{
+            localizedName = "镍板连接器";
             requirements(Category.distribution, with(
-                    铝板, 40,
+                    镍板, 40,
                     钴, 20
 
             ));
@@ -104,7 +103,7 @@ public class 物流5 {
             speed = 1;
             group = BlockGroup.transportation;
         }};
-        addToTree(铝板连接器, junction);
+        addToTree(镍板连接器, junction);
 
         钴传送带 = new Conveyor("钴传送带") {
             {
@@ -165,18 +164,18 @@ public class 物流5 {
         };
         addToTree(装甲钴传送带, 钴传送带);
 
-        铝板传送带 = new Conveyor("铝板传送带") {
+        镍板传送带 = new Conveyor("镍板传送带") {
             {
-                localizedName = "铝板传送带";
+                localizedName = "镍板传送带";
                 requirements(distribution, with(
-                        铝板, 1,
+                        镍板, 1,
                         固体放射物, 1
 
                 ));
                 health = 130;
                 speed = 0.5f;
                 buildCostMultiplier = 2f;
-                researchCost = with(铝板, 100,
+                researchCost = with(镍板, 100,
                         固体放射物, 100);//研究成本
                 group = BlockGroup.transportation;
             }
@@ -185,17 +184,17 @@ public class 物流5 {
             public void init() {
                 super.init();
 
-                junctionReplacement = 铝板连接器;
+                junctionReplacement = 镍板连接器;
                 bridgeReplacement = 钴传送带桥;
             }
         };
-        addToTree(铝板传送带, 钴传送带);
+        addToTree(镍板传送带, 钴传送带);
 
-        装甲铝板传送带 = new ArmoredConveyor("装甲铝板传送带") {
+        装甲镍板传送带 = new ArmoredConveyor("装甲镍板传送带") {
             {
-                localizedName = "装甲铝板传送带";
+                localizedName = "装甲镍板传送带";
                 requirements(distribution, with(
-                        铝板, 1,
+                        镍板, 1,
                         固体放射物, 3,
                         金, 3
 
@@ -204,7 +203,7 @@ public class 物流5 {
                 speed = 0.5f;
                 buildCostMultiplier = 2f;
                 researchCost = with(
-                        铝板, 100,
+                        镍板, 100,
                         固体放射物, 300,
                         金, 300);//研究成本
                 group = BlockGroup.transportation;
@@ -214,11 +213,11 @@ public class 物流5 {
             public void init() {
                 super.init();
 
-                junctionReplacement = 铝板连接器;
+                junctionReplacement = 镍板连接器;
                 bridgeReplacement = 钴传送带桥;
             }
         };
-        addToTree(装甲铝板传送带, 铝板传送带);
+        addToTree(装甲镍板传送带, 镍板传送带);
 
         啸动传送带 = new Conveyor("啸动传送带") {
             {
@@ -227,7 +226,7 @@ public class 物流5 {
                         钛合金, 10,
                         surgeAlloy, 10,
                         铁板, 10,
-                        铝板, 10
+                        镍板, 10
 
                 ));
                 buildCostMultiplier = 15;
@@ -237,7 +236,7 @@ public class 物流5 {
                         钛合金, 200,
                         surgeAlloy, 800,
                         铁板, 800,
-                        铝板, 800);//研究成本
+                        镍板, 800);//研究成本
                 group = BlockGroup.transportation;
             }
 
@@ -245,11 +244,11 @@ public class 物流5 {
             public void init() {
                 super.init();
 
-                junctionReplacement = 铝板连接器;
+                junctionReplacement = 镍板连接器;
                 bridgeReplacement = 钴传送带桥;
             }
         };
-        addToTree(啸动传送带, 铝板传送带);
+        addToTree(啸动传送带, 镍板传送带);
 
         装甲啸动传送带 = new ArmoredConveyor("装甲啸动传送带") {
             {
@@ -277,11 +276,11 @@ public class 物流5 {
             public void init() {
                 super.init();
 
-                junctionReplacement = 铝板连接器;
+                junctionReplacement = 镍板连接器;
                 bridgeReplacement = 钴传送带桥;
             }
         };
-        addToTree(装甲啸动传送带, 铝板传送带);
+        addToTree(装甲啸动传送带, 镍板传送带);
 
         钻石传送带 = new StackConveyor("钻石传送带") {{
             localizedName = "钻石传送带";
@@ -290,7 +289,7 @@ public class 物流5 {
                     钛合金, 10,
                     surgeAlloy, 10,
                     铁板, 10,
-                    铝板, 10
+                    镍板, 10
             ));
             health = 330;
             speed = 8f / 60f;
@@ -446,7 +445,7 @@ public class 物流5 {
                     thorium, 150,
                     silicon, 210,
                     铁, 180,
-                    铝板, 50,
+                    镍板, 50,
                     相织硅, 50
             ));
             minDistribute = itemCapacity / 2;
@@ -468,7 +467,7 @@ public class 物流5 {
                         silicon, 450,
                         titanium, 370,
                         啸动合金, 150,
-                        铝板, 270,
+                        镍板, 270,
                         相织硅, 350
                 ));
                 size = 4;

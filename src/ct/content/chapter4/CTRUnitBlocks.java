@@ -12,7 +12,8 @@ import mindustry.world.blocks.units.UnitCargoLoader;
 import mindustry.world.blocks.units.UnitCargoUnloadPoint;
 import mindustry.world.blocks.units.UnitFactory;
 
-import static ct.chapter4.CTRUnit.*;
+
+import static ct.content.chapter4.CTR3Unit4.*;
 import static mindustry.type.ItemStack.with;
 
 public class CTRUnitBlocks {
