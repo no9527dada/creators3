@@ -83,7 +83,10 @@ public class TechTree1 {
                     Seq.with(new Objectives.SectorComplete(洞穴躲藏))//占领地图)
             );
             addToTree(远程液体桥接器, 液体桥接器);
-            addToTree(液仓, 液体桥接器);
+            addToTree(液仓, 液体桥接器, null,
+                    Seq.with(
+                            new Objectives.Research(萤玫)//研究方块或资源
+                    ));
 
 
             addToTree(陶玉钻头, core0, ItemStack.with(

@@ -182,7 +182,7 @@ public class WuLiu1 {
         仓库 = new StorageBlock("仓库") {{
             localizedName = Core.bundle.get("WuLiu.cangku1");
             description = Core.bundle.getOrNull("WuLiu.description.null");
-            requirements(Category.effect, with(缕, 30, 陶, 50));
+            requirements(Category.effect, with(血晶, 20, 缕, 30, 陶, 50));
             size = 2;
             group = BlockGroup.transportation;
             itemCapacity = 200;
@@ -260,7 +260,7 @@ public class WuLiu1 {
         液仓 = new LiquidRouter("液仓") {{
             localizedName = Core.bundle.get("WuLiu.yeticangku");
             description = Core.bundle.getOrNull("WuLiu.description.null");
-            requirements(Category.liquid, with(萤玫, 50, 运符, 150));
+            requirements(Category.liquid, with(血晶, 20, 缕, 100, 运符, 150));
             liquidCapacity = 2500f;
             size = 2;
             solid = true;

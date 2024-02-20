@@ -364,7 +364,7 @@ public class 物流5 {
                         金, 125,
                         钻石混合物, 30,
                         Items.titanium, 125, Items.silicon, 130));
-                speed = 60f / 200f;
+                speed = 200f / 60f;
                 group = BlockGroup.transportation;
                 buildType = Build::new;
             }

@@ -724,7 +724,7 @@ public class Bullets5 {
 
     public static class 空之驱逐Bullet extends BasicBulletType {
         public 空之驱逐Bullet(float damagee, float 倍率, float 速度, float 射速, float 击退) {
-            sprite = "ct-月牙";
+            sprite = "ct-Bullet月牙";
             damage = damagee;
             speed = 速度;
             ammoMultiplier = 倍率;
