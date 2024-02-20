@@ -223,7 +223,7 @@ public class Blocks1 {
             description = Core.bundle.getOrNull("block.description.null");
             consumeItems(with(余烬, 5
             ));
-            consumeLiquid(灵液, 3 / 60f);
+            consumeLiquid(灵液, 2 / 60f);
             consumePower(240 / 60f);
             outputItem = new ItemStack(幻烬, 3);
             health = 160;
