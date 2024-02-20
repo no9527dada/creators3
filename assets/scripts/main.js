@@ -7,20 +7,24 @@ function CreatorsPackage(name) {
 }
 var CreatorsJavaPack = CreatorsPackage('ct')
 importPackage(CreatorsJavaPack)
-importPackage(CreatorsJavaPack.ahapter)
-//importPackage(CreatorsJavaPack.chapter1)
-importPackage(CreatorsJavaPack.draw)
-importPackage(CreatorsJavaPack.type)
+importPackage(CreatorsJavaPack.Asystem)
+importPackage(CreatorsJavaPack.Asystem.dialogs)
+importPackage(CreatorsJavaPack.Asystem.type)
+importPackage(CreatorsJavaPack.content)
+importPackage(CreatorsJavaPack.ui)
+
+
 
 
 
 CreatorsModJS.RunName.add("ct")
 CreatorsModJS.DawnRun.add(run(() => {
 	require('变速');
+		require('next_wave');
 //  require('UnitBlocks');
 // require('环保生产厂');
 // require('zuantou');
-//  require('104单位工厂');
+  require('104单位工厂');
 // require('测试');
 
 }));
