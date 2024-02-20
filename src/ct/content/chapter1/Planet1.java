@@ -64,7 +64,7 @@ public class Planet1 {
             allowWaveSimulation = false;//模拟后台波次
             accessible = true;
 
-            hiddenItems.addAll(mod资源1隐藏);
+            itemWhitelist.addAll(mod资源1显示);
             //TODO SHOULD there be lighting?
             updateLighting = false;
             ruleSetter = r -> {

@@ -4,8 +4,6 @@ import arc.Core;
 import arc.graphics.Color;
 import ct.Asystem.type.XVXSource;
 import mindustry.content.Fx;
-import mindustry.content.Items;
-import mindustry.content.Planets;
 import mindustry.entities.bullet.BasicBulletType;
 import mindustry.type.Category;
 import mindustry.type.ItemStack;
@@ -16,17 +14,12 @@ import mindustry.world.blocks.payloads.PayloadVoid;
 import mindustry.world.blocks.sandbox.*;
 import mindustry.world.meta.BuildVisibility;
 
-
-import static ct.content.Item0.erekir隐藏Items;
-import static ct.content.Item0.serpulo隐藏Items;
 import static ct.content.ItemX.物品;
 import static mindustry.type.ItemStack.with;
 
 public class SourceCodeModification_Sandbox {
     public static void load() {
 
-        Planets.erekir.hiddenItems.addAll(erekir隐藏Items).removeAll(Items.erekirItems);
-        Planets.serpulo.hiddenItems.addAll(serpulo隐藏Items).removeAll(Items.serpuloItems);
 
  /*      Blocks.powerSource.envDisabled = Evn2.标志1 | Env.terrestrial;
         Blocks. powerVoid.envDisabled = Evn2.标志1 | Env.terrestrial;

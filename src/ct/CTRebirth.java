@@ -9,22 +9,18 @@ import arc.struct.ObjectMap;
 import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
-
-
+import arc.util.Timer;
+import ct.Asystem.CTUpdater;
 import ct.Asystem.Wave;
 import ct.Asystem.dialogs.CT3InfoDialog;
 import ct.Asystem.dialogs.CT3PlanetDialog;
-import ct.content.*;
 import ct.Asystem.type.CTResearchDialog;
+import ct.content.*;
 import ct.content.Effect.NewFx;
 import ct.content.chapter1.Item1;
 import ct.content.chapter1.chapter1;
 import ct.content.chapter2.chapter2;
 import ct.content.chapter3.chapter3;
-import ct.content.chapter4.CT3Item4;
-import ct.content.chapter4.chapter4;
-import ct.content.chapter5.chapter5;
-import ct.content.chapter5.资源5;
 import ct.ui.CT3ClassificationUi;
 import mindustry.Vars;
 import mindustry.game.EventType;
@@ -73,8 +69,8 @@ public class CTRebirth extends Mod {
         //难度修改
 
         Item1.load();
-        CT3Item4.load();
-        资源5.load();
+        //CT3Item4.load();
+        // 资源5.load();
         Item0.load();
 
 
@@ -85,8 +81,8 @@ public class CTRebirth extends Mod {
         chapter1.load();
         chapter2.load();
         chapter3.load();
-        chapter4.load();
-        chapter5.load();
+        // chapter4.load();
+        // chapter5.load();
 
         ItemX.load();
         Blocks_z.load();
@@ -165,7 +161,7 @@ public class CTRebirth extends Mod {
         new Wave();
 
         //檢測更新
-        //  Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
+        Events.on(EventType.ClientLoadEvent.class, e -> Timer.schedule(CTUpdater::checkUpdate, 4));
 
         //选择方块显示图标
         Events.on(EventType.ClientLoadEvent.class, e -> CT3选择方块显示图标());

@@ -4,22 +4,14 @@ import arc.Core;
 import arc.graphics.Color;
 import mindustry.content.Blocks;
 import mindustry.content.Planets;
-import mindustry.content.UnitTypes;
 import mindustry.game.Team;
 import mindustry.graphics.g3d.HexMesh;
 import mindustry.maps.planet.TantrosPlanetGenerator;
-import mindustry.type.Category;
 import mindustry.type.Planet;
 import mindustry.type.Sector;
 import mindustry.world.Block;
-import mindustry.world.blocks.storage.CoreBlock;
-import mindustry.world.meta.BuildVisibility;
 
-import static ct.CTRebirth.setPlanet;
 import static ct.content.Item0.mod资源4隐藏;
-import static ct.content.Item0.mod资源5隐藏;
-import static ct.content.chapter4.CT3Item4.*;
-import static mindustry.type.ItemStack.with;
 
 public class Planet4 {
 
