@@ -8,6 +8,7 @@ import arc.struct.Seq;
 import mindustry.content.Fx;
 import mindustry.content.Liquids;
 import mindustry.content.StatusEffects;
+import mindustry.entities.bullet.BasicBulletType;
 import mindustry.gen.Building;
 import mindustry.gen.Sounds;
 import mindustry.graphics.CacheLayer;
@@ -58,10 +59,38 @@ public class Blocks1 {
 
 
     /*****************************/
+    public static class CTFloor extends Floor {
+        public CTFloor(String name, String localizedName) {
+            super(name);
+            this.localizedName = Core.bundle.get(localizedName);
+        }
+    }
 
+    ;
+
+    public static class CTStaticWall extends StaticWall {
+        public CTStaticWall(String name, String localizedName) {
+            super(name);
+            this.localizedName = Core.bundle.get(localizedName);
+        }
+    }
+
+    ;
 
     public static void load() {
+        new CTFloor("地砖地板", "地砖地板") {{
+            variants = 3;
+        }};
+        new CTFloor("地板a", "地板a");
+        new CTFloor("地板b", "地板b");
+        new CTFloor("地板c", "地板c");
+        new CTFloor("地板d", "地板d");
+        new CTFloor("地板e", "地板e");
+        new CTFloor("地板f", "地板f");
+        new CTFloor("地板g", "地板g");
 
+
+        new StaticWall("snow-wall");
         灵脉地板 = new Floor("灵脉地板") {{
             //  dragMultiplier = 0.35f;
             //  speedMultiplier = 0.9f;

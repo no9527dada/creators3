@@ -7,7 +7,6 @@ import mindustry.Vars;
 public class CreatorsModJS {
     public final static Seq<Runnable> DawnRun = new Seq<>();
     public final static Seq<String> RunName = new Seq<>();
-
     public static void DawnMods() {
         Run(DawnRun, RunName);
     }
@@ -16,18 +15,14 @@ public class CreatorsModJS {
         if (name.size != 0) {
             for (var i = 0; i < name.size; i++) {
                 Vars.content.setCurrentMod(Vars.mods.locateMod(name.get(i)));
-
                 try {
                     Require(name.get(i));
                 } catch (NoSuchFieldException | IllegalAccessException e) {
                     Vars.ui.showException(e);
                 }
-
                 Run.get(i).run();
             }
-
             Vars.content.setCurrentMod(null);
-
             try {
                 Require(null);
             } catch (NoSuchFieldException | IllegalAccessException e) {
@@ -35,7 +30,6 @@ public class CreatorsModJS {
             }
         }
     }
-
     private static void Require(String ModName) throws NoSuchFieldException, IllegalAccessException {
         var obj = Vars.mods.getScripts();
         var field = obj.getClass().getDeclaredField("currentMod");

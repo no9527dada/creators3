@@ -50,7 +50,7 @@ public class SourceCodeModification_Sandbox {
                     width = 9f;
                     height = 12f;
                     reloadMultiplier = 1.3f;
-                    damage = 9527;
+                    damage = 9999999;
                     lifetime = 70f;
                     ammoMultiplier = 1;
                     trailColor = Color.valueOf("f1cc68");

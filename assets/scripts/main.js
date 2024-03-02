@@ -26,13 +26,13 @@ CreatorsModJS.DawnRun.add(run(() => {
 // require('zuantou');
   require('104单位工厂');
 // require('测试');
- let mod = Vars.mods.locateMod("dlc2");
+/* let mod = Vars.mods.locateMod("dlc2");
  if (mod == null) {
 	 let bd = Vars.mods.locateMod("ct");
 	 let fi = bd.root.child("mod")
 		 .child("CT3_5.jar");
 	 Vars.mods.importMod(fi);
- };
+ };*/
 }));
 
 

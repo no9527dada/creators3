@@ -9,7 +9,7 @@ import mindustry.entities.Effect;
 import mindustry.entities.abilities.Ability;
 import mindustry.gen.Unit;
 
-//单位超速力场能力
+//单位给方块超速力场能力
 public class OverdriveAbility extends Ability {
     public float speedBoost;//超速倍率
     public float range;//超速范围

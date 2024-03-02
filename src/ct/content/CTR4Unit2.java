@@ -9,12 +9,12 @@ import arc.math.Interp;
 import arc.math.Mathf;
 import arc.math.geom.Vec2;
 import arc.struct.ObjectSet;
+import ct.Asystem.type.BlockDestroyReward;
+import ct.Asystem.type.OnlyAttackCoreAI;
 import mindustry.ai.types.DefenderAI;
+import mindustry.ai.types.GroundAI;
 import mindustry.ai.types.SuicideAI;
-import mindustry.content.Fx;
-import mindustry.content.Items;
-import mindustry.content.Liquids;
-import mindustry.content.StatusEffects;
+import mindustry.content.*;
 import mindustry.entities.Effect;
 import mindustry.entities.abilities.*;
 import mindustry.entities.bullet.*;
@@ -28,6 +28,7 @@ import mindustry.gen.Sounds;
 import mindustry.graphics.Drawf;
 import mindustry.graphics.Layer;
 import mindustry.graphics.Pal;
+import mindustry.type.ItemStack;
 import mindustry.type.UnitType;
 import mindustry.type.Weapon;
 import mindustry.type.ammo.ItemAmmoType;
@@ -61,6 +62,7 @@ public class CTR4Unit2 {
     public static UnitType latum1, renale1;
 
     public static void load() {
+
 
         尖刀 = new CTRUnitType("dagger", "dagger") {{
             localizedName = "CT利刃";
