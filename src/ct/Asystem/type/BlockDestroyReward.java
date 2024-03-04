@@ -121,4 +121,7 @@ public class BlockDestroyReward {
         return remove(target.name);
     }
 
+    public static BlockDestroyRewardConfiguration getRewardConfig(Block block) {
+        return Objects.isNull(block) ? null : configurations.get(block.name);
+    }
 }
