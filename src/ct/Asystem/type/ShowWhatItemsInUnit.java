@@ -1,11 +1,16 @@
 package ct.Asystem.type;
 
+import arc.Core;
 import arc.graphics.Color;
 import arc.graphics.g2d.Draw;
 import arc.graphics.g2d.Fill;
 import arc.graphics.g2d.Font;
+import arc.graphics.g2d.TextureRegion;
 import arc.math.Mathf;
+import arc.scene.Element;
+import arc.scene.ui.Image;
 import arc.scene.ui.layout.Scl;
+import arc.scene.ui.layout.Table;
 import arc.util.Align;
 import mindustry.entities.Effect;
 import mindustry.entities.abilities.Ability;
@@ -15,11 +20,38 @@ import mindustry.type.Item;
 import mindustry.type.ItemStack;
 import mindustry.ui.Fonts;
 
-public class ShowShowWhatItemsInUnit extends Ability {
+/*
+ * @Author:Ovulam5480 & LYBF
+ * @Desc  :单位死亡掉落显示
+ *
+ */
+public class ShowWhatItemsInUnit extends Ability {
     ItemStack[] itemStacks;
 
-    public ShowShowWhatItemsInUnit(ItemStack[] itemStacks) {
+    public ShowWhatItemsInUnit(ItemStack[] itemStacks) {
         this.itemStacks = itemStacks;
+    }
+
+    @Override
+    public void displayBars(Unit unit, Table bars) {
+        super.displayBars(unit, bars);
+    }
+
+    @Override
+    public String localized() {
+        return Core.bundle.get("ability.ct-unitdeathreward");
+    }
+
+    @Override
+    public void addStats(Table t) {
+        super.addStats(t);
+        t.row();
+        for (ItemStack itemStack : itemStacks) {
+            t.add(itemStack.amount + "x");
+            Image image = new Image(itemStack.item.fullIcon);
+            t.add(image);
+            t.row();
+        }
     }
 
     @Override

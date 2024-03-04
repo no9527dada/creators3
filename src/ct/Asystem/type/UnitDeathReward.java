@@ -98,6 +98,7 @@ public class UnitDeathReward {
         if (Objects.isNull(configuration) || Objects.isNull(name) || Objects.isNull(configuration.unitType) || Objects.isNull(configuration.itemStacks)) {
             return instance;
         }
+        configuration.unitType.abilities.add(new ShowWhatItemsInUnit(configuration.itemStacks));
         configurations.put(name, configuration);
         return instance;
     }
@@ -118,7 +119,6 @@ public class UnitDeathReward {
     public UnitDeathReward with(Object... configs) {
         for (int i = 0; i < configs.length; i += 2) {
             add(new UnitDeathRewardConfiguration((UnitType) configs[i], (ItemStack[]) configs[i + 1]));
-            ((UnitType) configs[i]).abilities.add(new ShowShowWhatItemsInUnit((ItemStack[]) configs[i + 1]));
         }
         return instance;
     }
@@ -133,5 +133,9 @@ public class UnitDeathReward {
 
     public UnitDeathReward remove(UnitType unitType) {
         return remove(unitType.name);
+    }
+
+    public static UnitDeathRewardConfiguration getRewardConfig(UnitType unit) {
+        return Objects.isNull(unit) ? null : configurations.get(unit.name);
     }
 }
