@@ -105,6 +105,7 @@ public class BlockDestroyReward {
     public BlockDestroyReward with(Object... configs) {
         for (int i = 0; i < configs.length; i += 2) {
             add(new BlockDestroyRewardConfiguration((Block) configs[i], (ItemStack[]) configs[i + 1]));
+           // ((UnitType)configs[i]).abilities.add(new ShowShowWhatItemsInUnit((ItemStack[]) configs[i + 1]));
         }
         return instance;
     }

@@ -4,7 +4,6 @@ import arc.Events;
 import mindustry.Vars;
 import mindustry.game.EventType;
 import mindustry.game.Team;
-import mindustry.type.Item;
 import mindustry.type.ItemStack;
 import mindustry.type.UnitType;
 import mindustry.world.modules.ItemModule;
@@ -119,6 +118,7 @@ public class UnitDeathReward {
     public UnitDeathReward with(Object... configs) {
         for (int i = 0; i < configs.length; i += 2) {
             add(new UnitDeathRewardConfiguration((UnitType) configs[i], (ItemStack[]) configs[i + 1]));
+            ((UnitType) configs[i]).abilities.add(new ShowShowWhatItemsInUnit((ItemStack[]) configs[i + 1]));
         }
         return instance;
     }
