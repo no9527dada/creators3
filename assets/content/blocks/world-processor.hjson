@@ -1,0 +1,10 @@
+ {
+  canOverdrive : false,
+  targetable : false,
+  instructionsPerTick : 8,
+  forceDark : true,
+  privileged : true,
+  update:true,
+  solid:true,
+  configurable:true
+  }

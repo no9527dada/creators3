@@ -46,12 +46,12 @@ public class EU_healthDisplay {
             this.height = height;
         }
 
-/*
+
         @Override
         public String localized() {
             return Core.bundle.get("ability.EU_healthDisplay");
         }
-*/
+
 
         @Override
         public void draw(Unit unit) {
