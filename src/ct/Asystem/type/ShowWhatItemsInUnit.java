@@ -87,6 +87,8 @@ public class ShowWhatItemsInUnit extends Ability {
         font.draw(String.valueOf(amount), 4 + e.x, e.y + 3, Align.center);
 
         Draw.reset();
+        font.setColor(Color.white);
+        font.getData().setScale(1f);
 
     });
 }
