@@ -66,7 +66,7 @@ public class UnitDeathReward {
             Team unitTeam = e.unit.team;
             Team playerTeam = Vars.player.team();
             //是同一个队伍时不触发
-            if (unitTeam == playerTeam) return;
+            if (unitTeam == playerTeam || Vars.state.teams.get(Vars.player.team()).core() == null) return;
             UnitDeathRewardConfiguration configuration = configurations.get(e.unit.type.name);
             if (!Objects.isNull(configuration)) {
                 ItemModule items = Vars.state.teams.get(Vars.player.team()).core().items();
@@ -77,6 +77,7 @@ public class UnitDeathReward {
         });
         return instance;
     }
+
 
     /*
      *添加奖励规则

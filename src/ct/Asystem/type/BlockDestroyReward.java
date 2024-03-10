@@ -53,7 +53,7 @@ public class BlockDestroyReward {
             Team unitTeam = e.tile.team();
             Team playerTeam = Vars.player.team();
             //是同一个队伍时不触发
-            if (unitTeam == playerTeam) return;
+            if (unitTeam == playerTeam || Vars.state.teams.get(Vars.player.team()).core() == null) return;
             BlockDestroyRewardConfiguration configuration = configurations.get(e.tile.block().name);
             if (!Objects.isNull(configuration)) {
                 ItemModule items = Vars.state.teams.get(Vars.player.team()).core().items();

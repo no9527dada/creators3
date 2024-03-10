@@ -20,7 +20,8 @@ importPackage(CreatorsJavaPack.ui)
 CreatorsModJS.RunName.add("ct")
 CreatorsModJS.DawnRun.add(run(() => {
 	require('变速');
-		require('next_wave');
+	require('unitCountBuild');
+
 //  require('UnitBlocks');
 // require('环保生产厂');
 // require('zuantou');

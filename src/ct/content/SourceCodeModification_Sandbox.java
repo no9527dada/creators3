@@ -44,7 +44,7 @@ public class SourceCodeModification_Sandbox {
             }
         };
         new LogicBlock("world-logic") {
-            public static void sectorCapture() {
+       /*     public static void sectorCapture() {
                 //the sector has been conquered - waves get disabled
                 Vars.state.rules.waves = true;
 
@@ -72,7 +72,7 @@ public class SourceCodeModification_Sandbox {
                 if (!headless && !Vars.net.client()) {
                     control.saves.saveSector(Vars.state.rules.sector);
                 }
-            }
+            }*/
 
             {
                 requirements(Category.logic, BuildVisibility.editorOnly, with());
