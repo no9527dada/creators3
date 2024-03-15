@@ -53,6 +53,7 @@ public class CTRebirth extends Mod {
 //healAmount=25 固定数量的块治疗
 
     public CTRebirth() {
+//        Vars.mods.locateMod("creators3").meta.version += "----" +  "[violet]创世神3-仙明决[]";
         //缩放
         Vars.renderer.minZoom = 0.5F;
         Vars.renderer.maxZoom = 32;
