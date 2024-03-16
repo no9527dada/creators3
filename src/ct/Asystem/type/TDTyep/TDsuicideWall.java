@@ -8,6 +8,8 @@ import mindustry.world.Tile;
 import mindustry.world.blocks.defense.Wall;
 import mindustry.world.blocks.environment.Floor;
 
+import static mindustry.Vars.state;
+
 //己方的掉血墙
 public class TDsuicideWall extends Wall {
     /**
@@ -27,6 +29,7 @@ public class TDsuicideWall extends Wall {
         super(name);
         update = true;
         health = 10000;
+        armor = 500;
         placeableLiquid = true;
         floor = (Floor) Blocks.water;//需要的地板
     }
@@ -65,12 +68,17 @@ public class TDsuicideWall extends Wall {
 
     /**
      * 不可拆
+     *
+     * @Override public boolean canBreak(Tile tile) {
+     * return false;
+     * }
      */
+
+    //生存模式不可拆
     @Override
     public boolean canBreak(Tile tile) {
-        return false;
+        return state.rules.editor || state.playtestingMap != null;
     }
-
 }
 
 

@@ -13,13 +13,14 @@ public class BombTurret extends PowerTurret {
     public BombTurret(String name, float 范围, float 时间, StatusEffect 状态) {
         super(name);
         size = 3;
+        armor = 500;
         destroyEffect = Fx.reactorExplosion;
         requirements(Category.defense, new ItemStack[]{});
         range = 范围;
         rotateSpeed = 0;//武器旋转速度
         shootCone = 360;//射击瞄准角度
         createRubble = false;//被破坏后的黑色残留
-        rebuildable = false;//不会自动重建，不会留下残影 星球规则里同：ghostBlocks= false
+        //rebuildable = false;//不会自动重建，不会留下残影 星球规则里同：ghostBlocks= false
         shootType = new BasicBulletType(0, 1) {{
             lifetime = 0f;
             ammoMultiplier = 1;//装弹倍率

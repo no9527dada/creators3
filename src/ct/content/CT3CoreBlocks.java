@@ -45,6 +45,7 @@ public class CT3CoreBlocks {
             class Build extends CoreBlock.CoreBuild {
                 @Override
                 public void damage(float damage) {
+
                 }
 
                 public void drawLight() {
@@ -127,5 +128,6 @@ public class CT3CoreBlocks {
             solid = false;//固体
             unitCapModifier = 6;
         }};
+
     }
 }

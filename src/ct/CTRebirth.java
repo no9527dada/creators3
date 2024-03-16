@@ -22,6 +22,8 @@ import ct.content.chapter1.Item1;
 import ct.content.chapter1.chapter1;
 import ct.content.chapter2.chapter2;
 import ct.content.chapter3.chapter3;
+import ct.content.chapter4.Turrets;
+import ct.content.chapter4.chapter4;
 import ct.ui.CT3ClassificationUi;
 import mindustry.Vars;
 import mindustry.content.Items;
@@ -37,7 +39,9 @@ import mindustry.ui.dialogs.BaseDialog;
 import mindustry.ui.dialogs.PlanetDialog;
 import mindustry.ui.dialogs.ResearchDialog;
 import mindustry.world.Block;
+import mindustry.world.Tile;
 import mindustry.world.blocks.distribution.Sorter;
+import mindustry.world.blocks.logic.LogicBlock;
 import mindustry.world.blocks.sandbox.ItemSource;
 import mindustry.world.blocks.sandbox.LiquidSource;
 import rhino.Context;
@@ -50,7 +54,7 @@ import static arc.Core.camera;
 import static mindustry.Vars.*;
 
 public class CTRebirth extends Mod {
-//healAmount=25 固定数量的块治疗
+//
 
     public CTRebirth() {
 //        Vars.mods.locateMod("creators3").meta.version += "----" +  "[violet]创世神3-仙明决[]";
@@ -69,6 +73,13 @@ public class CTRebirth extends Mod {
     }
 
     public void loadContent() {
+
+/*        LogicBlock {
+            @Override
+            public boolean canBreak (Tile tile){
+                return !privileged || state.rules.editor || state.playtestingMap != null;
+            }
+            {}}*/
         // Team.sharded.color.set(0.0F, 153.0F, 255.0F, 64.0F);//黄队伍颜色
         //Team.crux.color.set(79.0F, 181.0F, 103.0F, 255.0F);//红队伍颜色
         //难度修改
@@ -86,13 +97,12 @@ public class CTRebirth extends Mod {
         chapter1.load();
         chapter2.load();
         chapter3.load();
-        // chapter4.load();
+        //chapter4.load();
         // chapter5.load();
 
         ItemX.load();
         Blocks_z.load();
         SourceCodeModification_Sandbox.load();
-
 
         new CT3ClassificationUi();
         Scripts scripts = Vars.mods.getScripts();

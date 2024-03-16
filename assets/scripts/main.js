@@ -12,7 +12,7 @@ importPackage(CreatorsJavaPack.Asystem.dialogs)
 importPackage(CreatorsJavaPack.Asystem.type)
 importPackage(CreatorsJavaPack.content)
 importPackage(CreatorsJavaPack.ui)
-
+importPackage(CreatorsJavaPack.content.chapter4)
 
 
 
@@ -20,12 +20,11 @@ importPackage(CreatorsJavaPack.ui)
 CreatorsModJS.RunName.add("ct")
 CreatorsModJS.DawnRun.add(run(() => {
 	require('变速');
-	require('unitCountBuild');
 
-//  require('UnitBlocks');
+// require('UnitBlocks');
 // require('环保生产厂');
 // require('zuantou');
-  require('104单位工厂');
+// require('104单位工厂');
 // require('测试');
 /* let mod = Vars.mods.locateMod("dlc2");
  if (mod == null) {

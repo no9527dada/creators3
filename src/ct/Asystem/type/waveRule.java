@@ -5,7 +5,12 @@ import mindustry.gen.Building;
 import mindustry.logic.LAccess;
 import mindustry.type.Category;
 import mindustry.world.Block;
+import mindustry.world.Tile;
 import mindustry.world.meta.BuildVisibility;
+
+import static ct.content.ItemX.物品;
+import static mindustry.Vars.state;
+import static mindustry.type.ItemStack.with;
 
 /*用处理器配置此方块，完成终结波次的修改
 getlink q 0
@@ -22,9 +27,12 @@ public class waveRule extends Block {
         forceDark = true;
         privileged = true;
         size = 1;
-        category = Category.effect;
-        buildVisibility = BuildVisibility.sandboxOnly;
+        requirements(Category.effect, BuildVisibility.sandboxOnly, with(物品, 1));
+    }
 
+    @Override
+    public boolean canBreak(Tile tile) {
+        return !privileged || state.rules.editor || state.playtestingMap != null;
     }
 
     public class waveRuleBuild extends Building {

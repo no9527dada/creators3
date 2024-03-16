@@ -10,6 +10,7 @@ import mindustry.world.blocks.units.UnitFactory;
 public class TDUnitFactory extends UnitFactory {
     public TDUnitFactory(String name) {
         super(name);
+        armor = 500;
     }
 
     public Block 升级前置 = null;

@@ -1,5 +1,5 @@
 // 假设这是你的单位
-const XX = require('unitCountBuild');
+const XX = require('CTunitCountBuild');
 var { mono, flare } = UnitTypes;
 mono.useUnitCap = false; // 你的单位不需要限制
 flare.useUnitCap = false; // 你的单位不需要限制
