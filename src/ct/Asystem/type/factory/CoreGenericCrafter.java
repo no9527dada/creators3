@@ -13,13 +13,13 @@ import mindustry.world.blocks.storage.CoreBlock;
  * 核心工厂 直接产出物品至核心
  * 直接输出Items至核心,拒绝中间商赚差价
  */
-public class CoreGenericCrater extends GenericCrafter {
-    public CoreGenericCrater(String name) {
+public class CoreGenericCrafter extends GenericCrafter {
+    public CoreGenericCrafter(String name) {
         super(name);
     }
 
 
-    public class CoreGenericCraterBuilding extends GenericCrafterBuild {
+    public class CoreGenericCrafterBuilding extends GenericCrafterBuild {
         /*
          *dump items to core;
          */
