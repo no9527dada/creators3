@@ -18,6 +18,10 @@ public class BombTurret extends PowerTurret {
         requirements(Category.defense, new ItemStack[]{});
         range = 范围;
 
+        shootWarmupSpeed = 0.01F;
+        minWarmup = 1f;
+        linearWarmup = true;
+
         rotateSpeed = 0;//武器旋转速度
         shootCone = 360;//射击瞄准角度
         createRubble = false;//被破坏后的黑色残留

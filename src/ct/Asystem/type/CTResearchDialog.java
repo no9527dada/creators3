@@ -47,7 +47,6 @@ import mindustry.ui.Fonts;
 import mindustry.ui.ItemsDisplay;
 import mindustry.ui.Styles;
 import mindustry.ui.dialogs.BaseDialog;
-import mindustry.ui.dialogs.ResearchDialog;
 import mindustry.ui.layout.BranchTreeLayout;
 import mindustry.ui.layout.TreeLayout.TreeNode;
 
@@ -58,7 +57,7 @@ import static mindustry.gen.Tex.buttonDown;
 import static mindustry.gen.Tex.buttonOver;
 
 //TODO 科技树强化显示模块
-public class CTResearchDialog extends ResearchDialog {
+public class CTResearchDialog extends BaseDialog {
     public static boolean debugShowRequirements = false;
 
     public final float nodeSize = Scl.scl(60f);
@@ -77,7 +76,7 @@ public class CTResearchDialog extends ResearchDialog {
     private Color 描述颜色 = Color.valueOf("c6bdfa");
 
     public CTResearchDialog() {
-        super();
+        super("");
 
         titleTable.remove();
         titleTable.clear();

@@ -177,9 +177,6 @@ public class CTRebirth extends Mod {
         //区块名显示
         Vars.ui.planet = new CT3PlanetDialog();
 
-        //科技树全显
-        Vars.ui.research = new CTResearchDialog();
-
         //跳波惩罚
         new Wave();
 
@@ -192,9 +189,7 @@ public class CTRebirth extends Mod {
         //开屏显示
         Events.on(EventType.ClientLoadEvent.class, e -> CT3InfoDialog.show());
 
-
-
-/*
+       //科技树全显
         CTResearchDialog dialog = new CTResearchDialog();
         ResearchDialog research = Vars.ui.research;
         research.shown(() -> {
@@ -202,7 +197,6 @@ public class CTRebirth extends Mod {
             Objects.requireNonNull(research);
             Time.runTask(1.0F, research::hide);
         });
-*/
 
 
     }
