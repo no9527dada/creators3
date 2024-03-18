@@ -25,22 +25,16 @@ public class CoreGenericCrafter extends GenericCrafter {
          */
         @Override
         public boolean dump(Item todump) {
-            CoreBlock.CoreBuild build = Vars.state.teams.get(team()).core();
-            if (build.acceptItem(tile.build, todump)) {
-                build.handleItem(tile.build, todump);
-                tile.build.removeStack(todump, 1);
+            if (this.block.hasItems && this.items.total() != 0 && (todump == null || this.items.has(todump))) {
+                CoreBlock.CoreBuild build = Vars.state.teams.get(team()).core();
+                if (build.acceptItem(this, todump)) {
+                    build.handleItem(this, todump);
+                    this.items().remove(todump, 1);
+                }
+                return true;
             }
-            return true;
+            return false;
         }
 
-        @Override
-        public void offload(Item item) {
-            CoreBlock.CoreBuild build = Vars.state.teams.get(team()).core();
-            if (build.acceptItem(tile.build, item)) {
-                build.handleItem(tile.build, item);
-                tile.build.removeStack(item, 1);
-            }
-            super.offload(item);
-        }
     }
 }
