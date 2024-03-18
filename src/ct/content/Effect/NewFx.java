@@ -72,6 +72,15 @@ public class NewFx {
         });
     }
 
+    public static Effect 火焰(int lifetime, int clipsize, int 数量) {
+        return new Effect(lifetime, clipsize, e -> {
+            color(Pal.lightFlame, Pal.darkFlame, Color.gray, e.fin());
+            randLenVectors(e.id, 数量, e.finpow() * 60f, e.rotation, 10, (x, y) -> {
+                Fill.circle(e.x + x, e.y + y, 0.65f + e.fout() * 1.5f);
+            });
+        });
+    }
+
     /*////////////////////////////////////*/
     public static Effect D1, D2, D3, D4;
     public static Effect 制裁子弹消失, 灭亡子弹消失;

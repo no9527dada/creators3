@@ -14,6 +14,7 @@ stop
 * shootCone = 360;//射击瞄准角度
 *fragRandomSpread = 60;//破片散布角度
 * healAmount=25 固定数量的块治疗
+* inaccuracy=精准
 *
 *---------------------
 *给核心添加资源
