@@ -17,8 +17,6 @@ public class CoreGenericCrafter extends GenericCrafter {
     public CoreGenericCrafter(String name) {
         super(name);
     }
-
-
     public class CoreGenericCrafterBuilding extends GenericCrafterBuild {
         /*
          *dump items to core;

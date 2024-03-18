@@ -54,6 +54,7 @@ import static arc.Core.camera;
 import static mindustry.Vars.*;
 
 public class CTRebirth extends Mod {
+
 //
 
     public CTRebirth() {
@@ -116,14 +117,9 @@ public class CTRebirth extends Mod {
 
         CreatorsModJS.DawnMods();
 
-        //单位奖励测试
-        unitDeathRewardTest();
+
     }
-    private void unitDeathRewardTest(){
-        UnitDeathReward.getInstance().init().add(
-                UnitTypes.mono, ItemStack.with(Items.copper,10,Items.lead,20)
-        );
-    }
+
 
     public static boolean CTBlockBool = true;//原版蓝图系统解锁
     public static ObjectMap<Block, Block> CTBlock = new ObjectMap<>();
@@ -178,6 +174,11 @@ public class CTRebirth extends Mod {
     @Override
     public void init() {
 
+        //区块名显示
+        Vars.ui.planet = new CT3PlanetDialog();
+
+        //科技树全显
+        Vars.ui.research = new CTResearchDialog();
 
         //跳波惩罚
         new Wave();
@@ -192,7 +193,8 @@ public class CTRebirth extends Mod {
         Events.on(EventType.ClientLoadEvent.class, e -> CT3InfoDialog.show());
 
 
-        //科技树全显
+
+/*
         CTResearchDialog dialog = new CTResearchDialog();
         ResearchDialog research = Vars.ui.research;
         research.shown(() -> {
@@ -200,16 +202,7 @@ public class CTRebirth extends Mod {
             Objects.requireNonNull(research);
             Time.runTask(1.0F, research::hide);
         });
-
-
-        //区块名显示 //有BUG 导致不能用发射台
-        CT3PlanetDialog planet2 = new CT3PlanetDialog();
-        PlanetDialog planet = Vars.ui.planet;
-        planet.shown(() -> {
-            planet2.show();
-            Objects.requireNonNull(planet);
-            Time.runTask(1.0F, planet::hide);
-        });
+*/
 
 
     }
