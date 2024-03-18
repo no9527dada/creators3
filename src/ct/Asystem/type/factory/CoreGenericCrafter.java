@@ -30,8 +30,8 @@ public class CoreGenericCrafter extends GenericCrafter {
                 if (build.acceptItem(this, todump)) {
                     build.handleItem(this, todump);
                     this.items().remove(todump, 1);
+                    return true;
                 }
-                return true;
             }
             return false;
         }
