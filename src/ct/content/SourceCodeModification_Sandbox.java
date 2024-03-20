@@ -217,6 +217,58 @@ public class SourceCodeModification_Sandbox {
             }
         };
 
+        //短距离必死炮塔
+        new PowerTurret("SandboxTurret2") {
+            {
+                localizedName = Core.bundle.get("Turret.SandboxTurret");
+                description = Core.bundle.getOrNull("Turret.description.SandboxTurret");
+                requirements(Category.turret, with(物品, 0));
+                targetable = false;//被单位攻击？
+                canOverdrive = false;//超速
+                alwaysUnlocked = true;
+                envEnabled = Env.any;
+                shootType = new BasicBulletType(7f, 20) {{
+                    width = 9f;
+                    height = 12f;
+                    reloadMultiplier = 1.3f;
+                    damage = 9999999;
+                    lifetime = 15f;
+                    ammoMultiplier = 1;
+                    trailColor = Color.valueOf("f1cc68");
+                    trailParam = 5;
+                    trailLength = 8;
+                    trailWidth = 5;
+                    trailInterval = 10;
+                    trailChance = 1;
+                    trailRotation = true;
+                    trailEffect = Fx.none;
+                    homingRange = 3 * 8f;//追踪范围 跟踪
+                    homingPower = 0.3f; //追踪
+                    homingDelay = 0;
+                    splashDamageRadius = 2f * 8f;
+                    splashDamage = Float.POSITIVE_INFINITY;
+
+                }};
+                reload = 5f;
+                range = 10 * 8;
+                armor = 114154f;
+                shootCone = 365f;
+                ammoUseEffect = Fx.casing1;
+                health = 909130592;
+                inaccuracy = 13f; //精准
+                rotateSpeed = 30f;//炮塔旋转速度
+                buildVisibility = BuildVisibility.sandboxOnly;
+                buildType = Build::new;
+            }
+
+            class Build extends PowerTurret.PowerTurretBuild {
+                @Override
+                public void damage(float damage) {
+
+                }
+            }
+        };
+
         //沙盒无敌墙
         new Wall("SandboxWall") {
             {
