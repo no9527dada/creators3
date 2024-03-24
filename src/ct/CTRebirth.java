@@ -55,18 +55,20 @@ import static mindustry.Vars.*;
 
 public class CTRebirth extends Mod {
 
+
 //
 
     public CTRebirth() {
-//        Vars.mods.locateMod("creators3").meta.version += "----" +  "[violet]创世神3-仙明决[]";
+
         //缩放
-        Vars.renderer.minZoom = 0.5F;
+        Vars.renderer.minZoom = 0.2F;
         Vars.renderer.maxZoom = 32;
 //蓝图大小
         Vars.maxSchematicSize = 128;
         //地图禁用建筑隐藏
         Events.on(EventType.WorldLoadEvent.class, event -> {
                     Vars.state.rules.hideBannedBlocks = true;
+
                 }
         );
         //
@@ -74,7 +76,7 @@ public class CTRebirth extends Mod {
     }
 
     public void loadContent() {
-
+        Vars.mods.locateMod("ct").meta.version += "-" + "[violet]创世神3[] 版本：[yellow]" + Vars.mods.getMod("ct").meta.version + "[]";
 /*        LogicBlock {
             @Override
             public boolean canBreak (Tile tile){

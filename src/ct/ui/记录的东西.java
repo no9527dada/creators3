@@ -17,7 +17,7 @@ stop
 * inaccuracy=精准
 *
 *---------------------
-*给核心添加资源
+*更改核心的资源数量
 jump 2 equal @waveNumber 51
 end
 fetch core c @sharded 0 @conveyor
@@ -30,6 +30,17 @@ stop
 
 *
 *
+* 增加核心的资源数量
+*setrate 3000
+jump 3 equal HH 1
+end
+set 增加数量 50
+fetch core A @sharded 0 @conveyor
+sensor B A @cttd-星辰
+op add C B 增加数量
+setprop @cttd-星辰 A C
+stop
+
 *
 *
 *
@@ -53,9 +64,25 @@ message toast 3
 
 *
 *
+*间隔波数运行一次
+setrate 3000
+set 间隔波数 100
+jump 5 notEqual ST false
+set ST 1
+set W @waveNumber
+jump 7 equal W @waveNumber
+end
+op add W @waveNumber 间隔波数
+setflag "XC" true
 *
 *
-*
+* 禁用连接的建筑
+*set n 0
+getlink i n
+control enabled i 0 0 0 0
+op add n n 1
+jump 1 lessThan n @links
+
 *
 *
 *

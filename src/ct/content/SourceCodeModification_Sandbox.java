@@ -220,7 +220,7 @@ public class SourceCodeModification_Sandbox {
         //短距离必死炮塔
         new PowerTurret("SandboxTurret2") {
             {
-                localizedName = Core.bundle.get("Turret.SandboxTurret");
+                localizedName = Core.bundle.get("Turret.SandboxTurret2");
                 description = Core.bundle.getOrNull("Turret.description.SandboxTurret");
                 requirements(Category.turret, with(物品, 0));
                 targetable = false;//被单位攻击？
