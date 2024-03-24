@@ -9,39 +9,28 @@ import arc.struct.ObjectMap;
 import arc.struct.ObjectSet;
 import arc.struct.Seq;
 import arc.util.Time;
-import arc.util.Timer;
-import ct.Asystem.CTUpdater;
 import ct.Asystem.Wave;
 import ct.Asystem.dialogs.CT3InfoDialog;
 import ct.Asystem.dialogs.CT3PlanetDialog;
 import ct.Asystem.type.CTResearchDialog;
-import ct.Asystem.type.UnitDeathReward;
 import ct.content.*;
 import ct.content.Effect.NewFx;
 import ct.content.chapter1.Item1;
 import ct.content.chapter1.chapter1;
 import ct.content.chapter2.chapter2;
 import ct.content.chapter3.chapter3;
-import ct.content.chapter4.Turrets;
-import ct.content.chapter4.chapter4;
 import ct.ui.CT3ClassificationUi;
 import mindustry.Vars;
-import mindustry.content.Items;
-import mindustry.content.UnitTypes;
 import mindustry.game.EventType;
 import mindustry.graphics.Layer;
 import mindustry.mod.Mod;
 import mindustry.mod.Scripts;
-import mindustry.type.ItemStack;
 import mindustry.type.Planet;
 import mindustry.type.UnitType;
 import mindustry.ui.dialogs.BaseDialog;
-import mindustry.ui.dialogs.PlanetDialog;
 import mindustry.ui.dialogs.ResearchDialog;
 import mindustry.world.Block;
-import mindustry.world.Tile;
 import mindustry.world.blocks.distribution.Sorter;
-import mindustry.world.blocks.logic.LogicBlock;
 import mindustry.world.blocks.sandbox.ItemSource;
 import mindustry.world.blocks.sandbox.LiquidSource;
 import rhino.Context;
@@ -191,7 +180,7 @@ public class CTRebirth extends Mod {
         //开屏显示
         Events.on(EventType.ClientLoadEvent.class, e -> CT3InfoDialog.show());
 
-       //科技树全显
+        //科技树全显
         CTResearchDialog dialog = new CTResearchDialog();
         ResearchDialog research = Vars.ui.research;
         research.shown(() -> {
@@ -199,7 +188,6 @@ public class CTRebirth extends Mod {
             Objects.requireNonNull(research);
             Time.runTask(1.0F, research::hide);
         });
-
 
     }
 
