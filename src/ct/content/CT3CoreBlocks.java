@@ -1,22 +1,20 @@
 package ct.content;
 
 import arc.Core;
-import ct.Asystem.type.CTCoreBlock;
+import CtCoreSystem.CoreSystem.type.CTCoreBlock;
 import mindustry.content.UnitTypes;
 import mindustry.type.Category;
 import mindustry.world.Block;
 import mindustry.world.blocks.storage.CoreBlock;
 import mindustry.world.meta.BuildVisibility;
 
-import static ct.content.chapter1.CoreUnit1.*;
-import static ct.content.chapter1.Item1.*;
-import static ct.content.chapter4.CT3Item4.冥石;
-import static ct.content.chapter4.CT3Item4.魂石;
+import static ct.content.RebirthCoreUnit.*;
+import static ct.content.RebirthItem.*;
 import static mindustry.content.Items.*;
 import static mindustry.type.ItemStack.with;
 
 public class CT3CoreBlocks {
-    public static Block core0, core1, core2;
+    public static Block core0, core1, core2, core3;
     public static Block P5Core, P4Core;
 
     public static void load() {
@@ -98,9 +96,25 @@ public class CT3CoreBlocks {
             researchCost = with(陶, 20000, 翠, 25000, 幻烬, 11000);
             unitCapModifier = 6;
         }};
+        core3 = new CTCoreBlock("core3") {{
+            localizedName = Core.bundle.get("block.core3");
+            description = Core.bundle.getOrNull("block.description.core3");
+            requirements(Category.effect, with(陶, 5000, 翠, 5000, 缕, 1500, 威灵, 1300));
+            // alwaysUnlocked = true;
+            // incinerateNonBuildable = true;
+            solid = false;//固体
+            isFirstTier = false;//核心地板限制
+            unitType = 核心机3号;
+            health = 3201;
+            itemCapacity = 10000;
+            size = 4;
+            armor = 3;
+            researchCost = with(陶, 20000, 翠, 25000, 幻烬, 11000, 离, 15000);
+            unitCapModifier = 6;
 
+        }};
 
-        P4Core = new CTCoreBlock("P4Core") {{
+/*        P4Core = new CTCoreBlock("P4Core") {{
             // localizedName = Core.bundle.get("block.core0");
             // = Core.bundle.getOrNull("block.description.core0");
             requirements(Category.effect, BuildVisibility.editorOnly, with(魂石, 300, 冥石, 500));
@@ -112,8 +126,8 @@ public class CT3CoreBlocks {
             itemCapacity = 6000;
             size = 4;
             unitCapModifier = 0;
-        }};
-
+        }};*/
+/*
         P5Core = new CTCoreBlock("P5Core") {{//幻想工程的核心
             // localizedName = Core.bundle.get("block.core0");
             //description = Core.bundle.getOrNull("block.description.core0");
@@ -127,7 +141,7 @@ public class CT3CoreBlocks {
             size = 3;
             solid = false;//固体
             unitCapModifier = 6;
-        }};
+        }};*/
 
     }
 }

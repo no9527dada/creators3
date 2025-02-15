@@ -3,8 +3,8 @@ package ct.content;
 import arc.struct.Seq;
 import mindustry.type.Item;
 
-import static ct.content.ItemX.物品;
-import static ct.content.chapter1.Item1.*;
+import static CtCoreSystem.content.ItemX.物品;
+import static ct.content.RebirthItem.*;
 import static mindustry.content.Items.*;
 
 public class Item0 {

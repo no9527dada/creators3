@@ -1,11 +1,11 @@
 package ct.content;
 
-import ct.Asystem.type.BlockLimit.GenericCrafterLimit;
-import ct.Asystem.type.IightningForceProjector;
-import ct.Asystem.type.LaserMassDriver;
-import ct.Asystem.type.LinksSt0rageBlock;
-import ct.Asystem.type.BulletType.XinLingKongZhiZhiDan;
-import ct.Asystem.type.VXV.UnitPortal;
+import CtCoreSystem.CoreSystem.type.BlockLimit.GenericCrafterLimit;
+import CtCoreSystem.CoreSystem.type.IightningForceProjector;
+import CtCoreSystem.CoreSystem.type.LaserMassDriver;
+import CtCoreSystem.CoreSystem.type.LinksSt0rageBlock;
+import CtCoreSystem.CoreSystem.type.BulletType.XinLingKongZhiZhiDan;
+import CtCoreSystem.CoreSystem.type.VXV.UnitPortal;
 import mindustry.content.Blocks;
 import mindustry.content.Items;
 import mindustry.type.Category;
@@ -14,7 +14,7 @@ import mindustry.world.Block;
 import mindustry.world.blocks.defense.turrets.PowerTurret;
 import mindustry.world.meta.BuildVisibility;
 
-import static ct.content.ItemX.物品;
+import static CtCoreSystem.content.ItemX.物品;
 import static mindustry.type.ItemStack.with;
 
 //本类用于测试相关的Type

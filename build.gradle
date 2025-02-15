@@ -36,8 +36,8 @@ allprojects{
 dependencies{
     compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
     compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
-
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
+    compileOnly files("G:\\JAVA_MDT\\CT核心加载系统\\build\\libs\\CT核心加载系统.jar")
 }
 
 //force arc version
